@@ -1,0 +1,515 @@
+{
+  "metadata": {
+    "schema_version": "1.0",
+    "domain": "虚构科研领域 · 流程示例",
+    "title": "Research Evolution Map · 示例",
+    "description": "示例方法与论文均为虚构，只验证数据和交互。",
+    "version": "1.0",
+    "search_cutoff": "2026-11-11",
+    "search_log": [
+      {
+        "date": "2026-11-11",
+        "channel": "synthetic_fixture",
+        "query": "no external search",
+        "scope": "UI tests only",
+        "hits": 4,
+        "included": 4,
+        "excluded": 0,
+        "failures": []
+      }
+    ],
+    "coverage_limitations": "虚构示例，未开展真实文献检索。",
+    "first_html_delivered": false,
+    "is_synthetic": true,
+    "unresolved": [
+      "所有虚构关系仅用于功能演示。"
+    ],
+    "review_decisions": []
+  },
+  "papers": [
+    {
+      "id": "p-alpha",
+      "title": "虚构论文 Alpha: Foundational Representation",
+      "authors": [
+        "示例作者甲"
+      ],
+      "url": "https://example.org/papers/alpha",
+      "doi": null,
+      "arxiv_id": null,
+      "first_public_date": "2018-04",
+      "publication_date": "2019",
+      "venue": null,
+      "publication_status": "unknown",
+      "date_basis": "虚构日期，仅供测试",
+      "verification": "pending",
+      "provenance": [
+        {
+          "survey_id": "s-demo",
+          "reference_label": "[1]",
+          "source_id": "synthetic-fixture",
+          "access_level": "metadata",
+          "locator": "示例表1"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "fixture",
+          "source_id": "synthetic-fixture",
+          "source_type": "synthetic",
+          "access_level": "metadata",
+          "locator": "alpha",
+          "summary": "虚构元数据"
+        }
+      ]
+    },
+    {
+      "id": "p-beta",
+      "title": "虚构论文 Beta: Adaptive Mechanism",
+      "authors": [
+        "示例作者乙"
+      ],
+      "url": "https://example.org/papers/beta",
+      "doi": null,
+      "arxiv_id": null,
+      "first_public_date": "2020-05-10",
+      "publication_date": "2021-03",
+      "venue": null,
+      "publication_status": "unknown",
+      "date_basis": "虚构日期，仅供测试",
+      "verification": "pending",
+      "provenance": [
+        {
+          "survey_id": "s-demo",
+          "reference_label": "[1]",
+          "source_id": "synthetic-fixture",
+          "access_level": "metadata",
+          "locator": "示例表1"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "fixture",
+          "source_id": "synthetic-fixture",
+          "source_type": "synthetic",
+          "access_level": "metadata",
+          "locator": "beta",
+          "summary": "虚构元数据"
+        }
+      ]
+    },
+    {
+      "id": "p-gamma",
+      "title": "虚构论文 Gamma: Cross-route Optimization",
+      "authors": [
+        "示例作者丙"
+      ],
+      "url": "https://example.org/papers/gamma",
+      "doi": null,
+      "arxiv_id": null,
+      "first_public_date": "2028",
+      "publication_date": "2028-06",
+      "venue": null,
+      "publication_status": "unknown",
+      "date_basis": "虚构日期，仅供测试",
+      "verification": "pending",
+      "provenance": [
+        {
+          "survey_id": "s-demo",
+          "reference_label": "[1]",
+          "source_id": "synthetic-fixture",
+          "access_level": "metadata",
+          "locator": "示例表1"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "fixture",
+          "source_id": "synthetic-fixture",
+          "source_type": "synthetic",
+          "access_level": "metadata",
+          "locator": "gamma",
+          "summary": "虚构元数据"
+        }
+      ]
+    },
+    {
+      "id": "p-delta",
+      "title": "虚构论文 Delta: Undated Parallel Method",
+      "authors": [],
+      "url": "https://example.org/papers/delta",
+      "doi": null,
+      "arxiv_id": null,
+      "first_public_date": null,
+      "publication_date": null,
+      "venue": null,
+      "publication_status": "unknown",
+      "date_basis": "虚构日期，仅供测试",
+      "verification": "pending",
+      "provenance": [
+        {
+          "survey_id": "s-demo",
+          "reference_label": "[1]",
+          "source_id": "synthetic-fixture",
+          "access_level": "metadata",
+          "locator": "示例表1"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "fixture",
+          "source_id": "synthetic-fixture",
+          "source_type": "synthetic",
+          "access_level": "metadata",
+          "locator": "delta",
+          "summary": "虚构元数据"
+        }
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "id": "m-alpha",
+      "name": "示例方法 alpha",
+      "paper_ids": [
+        "p-alpha"
+      ],
+      "primary_group": "representation",
+      "group_ids": [
+        "representation"
+      ],
+      "aliases": [
+        "alpha"
+      ],
+      "tags": [
+        "虚构示例"
+      ],
+      "modules": [
+        "示例模块"
+      ],
+      "problem": "测试领域问题",
+      "mechanism": "用于测试的技术机制 alpha",
+      "contributions": "示例贡献",
+      "value": "验证一文多法和多分类",
+      "scenarios": "软件测试",
+      "limitations": "无科研结论",
+      "featured": true,
+      "featured_reason": "示例主线",
+      "classification_basis": "虚构机制分类",
+      "verification": "pending",
+      "provenance": [
+        {
+          "survey_id": "s-demo",
+          "reference_label": "[1]",
+          "source_id": "synthetic-fixture",
+          "access_level": "metadata",
+          "locator": "示例表1"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "m-alpha-module",
+      "name": "示例方法 alpha-module",
+      "paper_ids": [
+        "p-alpha"
+      ],
+      "primary_group": "optimization",
+      "group_ids": [
+        "optimization"
+      ],
+      "aliases": [
+        "alpha-module"
+      ],
+      "tags": [
+        "虚构示例"
+      ],
+      "modules": [
+        "示例模块"
+      ],
+      "problem": "测试领域问题",
+      "mechanism": "用于测试的技术机制 alpha-module",
+      "contributions": "示例贡献",
+      "value": "验证一文多法和多分类",
+      "scenarios": "软件测试",
+      "limitations": "无科研结论",
+      "featured": true,
+      "featured_reason": "示例主线",
+      "classification_basis": "虚构机制分类",
+      "verification": "pending",
+      "provenance": [
+        {
+          "survey_id": "s-demo",
+          "reference_label": "[1]",
+          "source_id": "synthetic-fixture",
+          "access_level": "metadata",
+          "locator": "示例表1"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "m-beta",
+      "name": "示例方法 beta",
+      "paper_ids": [
+        "p-beta"
+      ],
+      "primary_group": "adaptive",
+      "group_ids": [
+        "adaptive",
+        "optimization"
+      ],
+      "aliases": [
+        "beta"
+      ],
+      "tags": [
+        "虚构示例"
+      ],
+      "modules": [
+        "示例模块"
+      ],
+      "problem": "测试领域问题",
+      "mechanism": "用于测试的技术机制 beta",
+      "contributions": "示例贡献",
+      "value": "验证一文多法和多分类",
+      "scenarios": "软件测试",
+      "limitations": "无科研结论",
+      "featured": true,
+      "featured_reason": "示例主线",
+      "classification_basis": "虚构机制分类",
+      "verification": "pending",
+      "provenance": [
+        {
+          "survey_id": "s-demo",
+          "reference_label": "[1]",
+          "source_id": "synthetic-fixture",
+          "access_level": "metadata",
+          "locator": "示例表1"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "m-gamma",
+      "name": "示例方法 gamma",
+      "paper_ids": [
+        "p-gamma"
+      ],
+      "primary_group": "optimization",
+      "group_ids": [
+        "optimization"
+      ],
+      "aliases": [
+        "gamma"
+      ],
+      "tags": [
+        "虚构示例"
+      ],
+      "modules": [
+        "示例模块"
+      ],
+      "problem": "测试领域问题",
+      "mechanism": "用于测试的技术机制 gamma",
+      "contributions": "示例贡献",
+      "value": "验证一文多法和多分类",
+      "scenarios": "软件测试",
+      "limitations": "无科研结论",
+      "featured": true,
+      "featured_reason": "示例主线",
+      "classification_basis": "虚构机制分类",
+      "verification": "pending",
+      "provenance": [
+        {
+          "survey_id": "s-demo",
+          "reference_label": "[1]",
+          "source_id": "synthetic-fixture",
+          "access_level": "metadata",
+          "locator": "示例表1"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "m-delta",
+      "name": "示例方法 delta",
+      "paper_ids": [
+        "p-delta"
+      ],
+      "primary_group": "representation",
+      "group_ids": [
+        "representation"
+      ],
+      "aliases": [
+        "delta"
+      ],
+      "tags": [
+        "虚构示例"
+      ],
+      "modules": [
+        "示例模块"
+      ],
+      "problem": "测试领域问题",
+      "mechanism": "用于测试的技术机制 delta",
+      "contributions": "示例贡献",
+      "value": "验证一文多法和多分类",
+      "scenarios": "软件测试",
+      "limitations": "无科研结论",
+      "featured": false,
+      "featured_reason": "",
+      "classification_basis": "虚构机制分类",
+      "verification": "pending",
+      "provenance": [
+        {
+          "survey_id": "s-demo",
+          "reference_label": "[1]",
+          "source_id": "synthetic-fixture",
+          "access_level": "metadata",
+          "locator": "示例表1"
+        }
+      ],
+      "evidence": []
+    }
+  ],
+  "groups": [
+    {
+      "id": "representation",
+      "name": "表示机制",
+      "parent_id": null,
+      "definition": "用于示例的表示方向",
+      "problem": "如何表达对象",
+      "rationale": "测试机制分类",
+      "representative_method_ids": [
+        "m-alpha"
+      ],
+      "index": 0
+    },
+    {
+      "id": "adaptive",
+      "name": "自适应表示",
+      "parent_id": "representation",
+      "definition": "表示方向的二级类别",
+      "problem": "如何调整表示",
+      "rationale": "测试二级分类",
+      "representative_method_ids": [
+        "m-beta"
+      ],
+      "index": 1
+    },
+    {
+      "id": "optimization",
+      "name": "优化机制",
+      "parent_id": null,
+      "definition": "用于示例的优化方向",
+      "problem": "如何优化",
+      "rationale": "测试交叉归属",
+      "representative_method_ids": [
+        "m-gamma"
+      ],
+      "index": 2
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-1",
+      "source": "m-alpha",
+      "target": "m-beta",
+      "type": "direct",
+      "description": "虚构关系 · direct",
+      "basis": "演示关系类型，非学术证据",
+      "claim_basis": "inference",
+      "confidence": 0.2,
+      "verification": "pending",
+      "evidence": [
+        {
+          "field": "relationship",
+          "source_id": "synthetic-fixture",
+          "source_type": "synthetic",
+          "access_level": "metadata",
+          "locator": "edge 1",
+          "summary": "仅 UI 测试"
+        }
+      ]
+    },
+    {
+      "id": "e-2",
+      "source": "m-beta",
+      "target": "m-gamma",
+      "type": "extension",
+      "description": "虚构关系 · extension",
+      "basis": "演示关系类型，非学术证据",
+      "claim_basis": "inference",
+      "confidence": 0.2,
+      "verification": "pending",
+      "evidence": [
+        {
+          "field": "relationship",
+          "source_id": "synthetic-fixture",
+          "source_type": "synthetic",
+          "access_level": "metadata",
+          "locator": "edge 2",
+          "summary": "仅 UI 测试"
+        }
+      ]
+    },
+    {
+      "id": "e-3",
+      "source": "m-alpha-module",
+      "target": "m-gamma",
+      "type": "borrow",
+      "description": "虚构关系 · borrow",
+      "basis": "演示关系类型，非学术证据",
+      "claim_basis": "inference",
+      "confidence": 0.2,
+      "verification": "pending",
+      "evidence": [
+        {
+          "field": "relationship",
+          "source_id": "synthetic-fixture",
+          "source_type": "synthetic",
+          "access_level": "metadata",
+          "locator": "edge 3",
+          "summary": "仅 UI 测试"
+        }
+      ]
+    },
+    {
+      "id": "e-4",
+      "source": "m-gamma",
+      "target": "m-delta",
+      "type": "theme",
+      "description": "虚构关系 · theme",
+      "basis": "演示关系类型，非学术证据",
+      "claim_basis": "inference",
+      "confidence": 0.2,
+      "verification": "pending",
+      "evidence": [
+        {
+          "field": "relationship",
+          "source_id": "synthetic-fixture",
+          "source_type": "synthetic",
+          "access_level": "metadata",
+          "locator": "edge 4",
+          "summary": "仅 UI 测试"
+        }
+      ]
+    }
+  ],
+  "surveys": [
+    {
+      "id": "s-demo",
+      "title": "虚构综述：用于流程验证",
+      "url": "https://example.org/survey",
+      "access_level": "metadata",
+      "taxonomy": [
+        "表示",
+        "优化"
+      ],
+      "references": [
+        {
+          "label": "[1]",
+          "paper_id": "p-alpha"
+        }
+      ]
+    }
+  ],
+  "research_tracks": []
+}

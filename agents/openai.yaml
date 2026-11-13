@@ -1,0 +1,6 @@
+interface:
+  display_name: "Research Evolution Map"
+  short_description: "整理科研综述与文献、归纳技术方法及继承关系，生成交互式技术演进图"
+  default_prompt: "使用 $research-evolution-map 整理已有综述和相关文献，提取方法、归纳技术分类、分析继承关系并补充文献，生成交互式 HTML 技术演进图。"
+policy:
+  allow_implicit_invocation: true
