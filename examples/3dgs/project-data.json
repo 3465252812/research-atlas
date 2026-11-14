@@ -5808,16 +5808,24 @@
     {
       "id": "paper-method-66",
       "title": "Deformable radial kernel splatting",
-      "authors": [],
-      "url": "https://scholar.google.com/scholar?q=Deformable%20radial%20kernel%20splatting",
+      "authors": [
+        "Yi-Hua Huang",
+        "Ming-Xian Lin",
+        "Yang-Tian Sun",
+        "Ziyi Yang",
+        "Xiaoyang Lyu",
+        "Yan-Pei Cao",
+        "Xiaojuan Qi"
+      ],
+      "url": "https://arxiv.org/abs/2412.11752",
       "doi": null,
-      "arxiv_id": null,
-      "first_public_date": null,
+      "arxiv_id": "2412.11752",
+      "first_public_date": "2024-12-16",
       "publication_date": null,
       "venue": null,
       "publication_status": "unknown",
-      "date_basis": "时间：2025 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
-      "verification": "pending",
+      "date_basis": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+      "verification": "partial",
       "provenance": [
         {
           "survey_id": "chen",
@@ -5837,6 +5845,16 @@
           "access_level": "legacy_import",
           "locator": "method-66",
           "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+        },
+        {
+          "field": "first_public_date",
+          "source_type": "primary_paper",
+          "access_level": "metadata",
+          "url": "https://arxiv.org/abs/2412.11752",
+          "locator": "Submission history, [v1]",
+          "summary": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+          "checked_at": "2026-11-14",
+          "url_status": "verified"
         }
       ]
     },
@@ -5942,16 +5960,22 @@
     {
       "id": "paper-method-69",
       "title": "Deformable beta splatting",
-      "authors": [],
-      "url": "https://scholar.google.com/scholar?q=Deformable%20beta%20splatting",
+      "authors": [
+        "Rong Liu",
+        "Dylan Sun",
+        "Meida Chen",
+        "Yue Wang",
+        "Andrew Feng"
+      ],
+      "url": "https://arxiv.org/abs/2501.18630",
       "doi": null,
-      "arxiv_id": null,
-      "first_public_date": null,
+      "arxiv_id": "2501.18630",
+      "first_public_date": "2025-01-27",
       "publication_date": null,
       "venue": null,
       "publication_status": "unknown",
-      "date_basis": "时间：2025 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
-      "verification": "pending",
+      "date_basis": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+      "verification": "partial",
       "provenance": [
         {
           "survey_id": "chen",
@@ -5971,6 +5995,16 @@
           "access_level": "legacy_import",
           "locator": "method-69",
           "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+        },
+        {
+          "field": "first_public_date",
+          "source_type": "primary_paper",
+          "access_level": "metadata",
+          "url": "https://arxiv.org/abs/2501.18630",
+          "locator": "Submission history, [v1]",
+          "summary": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+          "checked_at": "2026-11-14",
+          "url_status": "verified"
         }
       ]
     },
@@ -6169,16 +6203,26 @@
     {
       "id": "paper-method-73",
       "title": "GaussianImage: 1000 FPS Image Representation and Compression by 2D Gaussian Splatting",
-      "authors": [],
+      "authors": [
+        "Xinjie Zhang",
+        "Xingtong Ge",
+        "Tongda Xu",
+        "Dailan He",
+        "Yan Wang",
+        "Hongwei Qin",
+        "Guo Lu",
+        "Jing Geng",
+        "Jun Zhang"
+      ],
       "url": "https://arxiv.org/abs/2403.08551",
       "doi": null,
       "arxiv_id": "2403.08551",
-      "first_public_date": null,
+      "first_public_date": "2024-03-13",
       "publication_date": null,
       "venue": null,
       "publication_status": "unknown",
-      "date_basis": "时间：2024 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
-      "verification": "pending",
+      "date_basis": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+      "verification": "partial",
       "provenance": [
         {
           "survey_id": "wu",
@@ -6214,6 +6258,16 @@
           "access_level": "legacy_import",
           "locator": "method-73",
           "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+        },
+        {
+          "field": "first_public_date",
+          "source_type": "primary_paper",
+          "access_level": "metadata",
+          "url": "https://arxiv.org/abs/2403.08551",
+          "locator": "Submission history, [v1]",
+          "summary": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+          "checked_at": "2026-11-14",
+          "url_status": "verified"
         }
       ]
     },
@@ -11439,16 +11493,25 @@
     {
       "id": "paper-method-146",
       "title": "Radiative Gaussian Splatting for Efficient X-ray Novel View Synthesis",
-      "authors": [],
+      "authors": [
+        "Yuanhao Cai",
+        "Yixun Liang",
+        "Jiahao Wang",
+        "Angtian Wang",
+        "Yulun Zhang",
+        "Xiaokang Yang",
+        "Zongwei Zhou",
+        "Alan Yuille"
+      ],
       "url": "https://arxiv.org/abs/2403.04116",
       "doi": null,
       "arxiv_id": "2403.04116",
-      "first_public_date": null,
+      "first_public_date": "2024-03-07",
       "publication_date": null,
       "venue": null,
       "publication_status": "unknown",
-      "date_basis": "时间：2024 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
-      "verification": "pending",
+      "date_basis": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+      "verification": "partial",
       "provenance": [
         {
           "survey_id": "wu",
@@ -11476,22 +11539,40 @@
           "access_level": "legacy_import",
           "locator": "method-146",
           "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+        },
+        {
+          "field": "first_public_date",
+          "source_type": "primary_paper",
+          "access_level": "metadata",
+          "url": "https://arxiv.org/abs/2403.04116",
+          "locator": "Submission history, [v1]",
+          "summary": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+          "checked_at": "2026-11-14",
+          "url_status": "verified"
         }
       ]
     },
     {
       "id": "paper-method-147",
-      "title": "Endo-4dgs: Distilling depth ranking for endoscopic monocular scene reconstruction with 4d gaussian splatting",
-      "authors": [],
+      "title": "Endo-4DGS: Endoscopic Monocular Scene Reconstruction with 4D Gaussian Splatting",
+      "authors": [
+        "Yiming Huang",
+        "Beilei Cui",
+        "Long Bai",
+        "Ziqi Guo",
+        "Mengya Xu",
+        "Mobarakol Islam",
+        "Hongliang Ren"
+      ],
       "url": "https://arxiv.org/abs/2401.16416",
       "doi": null,
       "arxiv_id": "2401.16416",
-      "first_public_date": null,
+      "first_public_date": "2024-01-29",
       "publication_date": null,
       "venue": null,
       "publication_status": "unknown",
-      "date_basis": "时间：2024 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
-      "verification": "pending",
+      "date_basis": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+      "verification": "partial",
       "provenance": [
         {
           "survey_id": "wu",
@@ -11535,6 +11616,16 @@
           "access_level": "legacy_import",
           "locator": "method-147",
           "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+        },
+        {
+          "field": "first_public_date",
+          "source_type": "primary_paper",
+          "access_level": "metadata",
+          "url": "https://arxiv.org/abs/2401.16416",
+          "locator": "Submission history, [v1]",
+          "summary": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+          "checked_at": "2026-11-14",
+          "url_status": "verified"
         }
       ]
     },
@@ -12335,16 +12426,21 @@
     {
       "id": "paper-method-161",
       "title": "GScream: learning 3d geometry and feature consistent gaussian splatting for object removal",
-      "authors": [],
+      "authors": [
+        "Yuxin Wang",
+        "Qianyi Wu",
+        "Guofeng Zhang",
+        "Dan Xu"
+      ],
       "url": "https://arxiv.org/abs/2404.13679",
       "doi": null,
       "arxiv_id": "2404.13679",
-      "first_public_date": null,
+      "first_public_date": "2024-04-21",
       "publication_date": null,
       "venue": null,
       "publication_status": "unknown",
-      "date_basis": "时间：2024 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
-      "verification": "pending",
+      "date_basis": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+      "verification": "partial",
       "provenance": [
         {
           "survey_id": "chen",
@@ -12364,6 +12460,16 @@
           "access_level": "legacy_import",
           "locator": "method-161",
           "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+        },
+        {
+          "field": "first_public_date",
+          "source_type": "primary_paper",
+          "access_level": "metadata",
+          "url": "https://arxiv.org/abs/2404.13679",
+          "locator": "Submission history, [v1]",
+          "summary": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+          "checked_at": "2026-11-14",
+          "url_status": "verified"
         }
       ]
     },
@@ -13297,16 +13403,24 @@
     {
       "id": "paper-method-175",
       "title": "Real-time large-scale deformation of gaussian splatting",
-      "authors": [],
-      "url": "https://scholar.google.com/scholar?q=Real-time%20large-scale%20deformation%20of%20Gaussian%20splatting",
-      "doi": null,
-      "arxiv_id": null,
-      "first_public_date": null,
-      "publication_date": null,
-      "venue": null,
-      "publication_status": "unknown",
-      "date_basis": "时间：2024 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
-      "verification": "pending",
+      "authors": [
+        "Lin Gao",
+        "Jie Yang",
+        "Bo-Tao Zhang",
+        "Jia-Mu Sun",
+        "Yu-Jie Yuan",
+        "Hongbo Fu",
+        "Yu-Kun Lai"
+      ],
+      "url": "https://arxiv.org/abs/2402.04796",
+      "doi": "10.1145/3687756",
+      "arxiv_id": "2402.04796",
+      "first_public_date": "2024-02-07",
+      "publication_date": "2024-12-19",
+      "venue": "ACM Transactions on Graphics 43(6)",
+      "publication_status": "published",
+      "date_basis": "预印本 2402.04796 v1 于 2024-02-07 公开；作者、摘要和机构记录对应 GaussianMesh 的正式发表题名。与 method-157 保留为待合并的同一工作题名记录。",
+      "verification": "partial",
       "provenance": [
         {
           "survey_id": "chen",
@@ -13326,6 +13440,26 @@
           "access_level": "legacy_import",
           "locator": "method-175",
           "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+        },
+        {
+          "field": "first_public_date",
+          "source_type": "primary_paper",
+          "access_level": "metadata",
+          "url": "https://arxiv.org/abs/2402.04796",
+          "locator": "Submission history, [v1]",
+          "summary": "预印本 2402.04796 v1 于 2024-02-07 公开；作者、摘要和机构记录对应 GaussianMesh 的正式发表题名。与 method-157 保留为待合并的同一工作题名记录。",
+          "checked_at": "2026-11-14",
+          "url_status": "verified"
+        },
+        {
+          "field": "publication",
+          "source_type": "publisher_metadata",
+          "access_level": "metadata",
+          "url": "https://researchportal.hkust.edu.hk/en/publications/real-time-large-scale-deformation-of-gaussian-splatting/",
+          "locator": "Publication status, DOI, authors and abstract",
+          "summary": "机构记录列出正式题名、相同作者和 GaussianMesh 摘要，发表日期为 2024-12-19。",
+          "checked_at": "2026-11-14",
+          "url_status": "verified"
         }
       ]
     },
@@ -13587,16 +13721,24 @@
     {
       "id": "paper-method-181",
       "title": "DreamPhysics: Learning Physics-Based 3D Dynamics with Video Diffusion Priors",
-      "authors": [],
+      "authors": [
+        "Tianyu Huang",
+        "Haoze Zhang",
+        "Yihan Zeng",
+        "Zhilu Zhang",
+        "Hui Li",
+        "Wangmeng Zuo",
+        "Rynson W. H. Lau"
+      ],
       "url": "https://arxiv.org/abs/2406.01476",
       "doi": null,
       "arxiv_id": "2406.01476",
-      "first_public_date": null,
+      "first_public_date": "2024-06-03",
       "publication_date": null,
       "venue": null,
       "publication_status": "unknown",
-      "date_basis": "时间：2025 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
-      "verification": "pending",
+      "date_basis": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+      "verification": "partial",
       "provenance": [
         {
           "survey_id": "chen",
@@ -13616,6 +13758,16 @@
           "access_level": "legacy_import",
           "locator": "method-181",
           "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+        },
+        {
+          "field": "first_public_date",
+          "source_type": "primary_paper",
+          "access_level": "metadata",
+          "url": "https://arxiv.org/abs/2406.01476",
+          "locator": "Submission history, [v1]",
+          "summary": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+          "checked_at": "2026-11-14",
+          "url_status": "verified"
         }
       ]
     },
@@ -15147,16 +15299,32 @@
     {
       "id": "paper-method-205",
       "title": "Baking gaussian splatting into diffusion denoiser for fast and scalable single-stage image-to-3d generation and reconstruction",
-      "authors": [],
-      "url": "https://scholar.google.com/scholar?q=Baking%20Gaussian%20splatting%20into%20diffusion%20denoiser%20for%20fast%20and%20scalable%20single-stage%20image-to-3D%20generation%20and%20reconstruction",
+      "authors": [
+        "Yuanhao Cai",
+        "He Zhang",
+        "Kai Zhang",
+        "Yixun Liang",
+        "Mengwei Ren",
+        "Fujun Luan",
+        "Qing Liu",
+        "Soo Ye Kim",
+        "Jianming Zhang",
+        "Zhifei Zhang",
+        "Yuqian Zhou",
+        "Yulun Zhang",
+        "Xiaokang Yang",
+        "Zhe Lin",
+        "Alan Yuille"
+      ],
+      "url": "https://arxiv.org/abs/2411.14384",
       "doi": null,
-      "arxiv_id": null,
-      "first_public_date": null,
+      "arxiv_id": "2411.14384",
+      "first_public_date": "2024-11-21",
       "publication_date": null,
       "venue": null,
       "publication_status": "unknown",
-      "date_basis": "时间：2025 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
-      "verification": "pending",
+      "date_basis": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+      "verification": "partial",
       "provenance": [
         {
           "survey_id": "chen",
@@ -15176,22 +15344,43 @@
           "access_level": "legacy_import",
           "locator": "method-205",
           "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+        },
+        {
+          "field": "first_public_date",
+          "source_type": "primary_paper",
+          "access_level": "metadata",
+          "url": "https://arxiv.org/abs/2411.14384",
+          "locator": "Submission history, [v1]",
+          "summary": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+          "checked_at": "2026-11-14",
+          "url_status": "verified"
         }
       ]
     },
     {
       "id": "paper-method-206",
       "title": "GSD: view-guided gaussian splatting diffusion for 3d reconstruction",
-      "authors": [],
+      "authors": [
+        "Yuxuan Mu",
+        "Xinxin Zuo",
+        "Chuan Guo",
+        "Yilin Wang",
+        "Juwei Lu",
+        "Xiaofeng Wu",
+        "Songcen Xu",
+        "Peng Dai",
+        "Youliang Yan",
+        "Li Cheng"
+      ],
       "url": "https://arxiv.org/abs/2407.04237",
       "doi": null,
       "arxiv_id": "2407.04237",
-      "first_public_date": null,
+      "first_public_date": "2024-07-05",
       "publication_date": null,
       "venue": null,
       "publication_status": "unknown",
-      "date_basis": "时间：2024 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
-      "verification": "pending",
+      "date_basis": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+      "verification": "partial",
       "provenance": [
         {
           "survey_id": "chen",
@@ -15211,6 +15400,16 @@
           "access_level": "legacy_import",
           "locator": "method-206",
           "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+        },
+        {
+          "field": "first_public_date",
+          "source_type": "primary_paper",
+          "access_level": "metadata",
+          "url": "https://arxiv.org/abs/2407.04237",
+          "locator": "Submission history, [v1]",
+          "summary": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+          "checked_at": "2026-11-14",
+          "url_status": "verified"
         }
       ]
     },
@@ -17200,16 +17399,20 @@
     {
       "id": "paper-method-237",
       "title": "3d gaussian map with open-set semantic grouping for vision-language navigation",
-      "authors": [],
-      "url": "https://scholar.google.com/scholar?q=3D%20Gaussian%20map%20with%20open-set%20semantic%20grouping%20for%20vision-%20language%20navigation",
+      "authors": [
+        "Jianzhe Gao",
+        "Rui Liu",
+        "Wenguan Wang"
+      ],
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Gao_3D_Gaussian_Map_with_Open-Set_Semantic_Grouping_for_Vision-Language_Navigation_ICCV_2025_paper.html",
       "doi": null,
       "arxiv_id": null,
-      "first_public_date": null,
-      "publication_date": null,
-      "venue": null,
-      "publication_status": "unknown",
-      "date_basis": "时间：2025 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
-      "verification": "pending",
+      "first_public_date": "2025-10",
+      "publication_date": "2025-10",
+      "venue": "ICCV 2025",
+      "publication_status": "published",
+      "date_basis": "目前可确认的公开记录为 ICCV 2025 论文集，BibTeX 月份为 October；按月份记录，不推定具体日或更早预印本。",
+      "verification": "partial",
       "provenance": [
         {
           "survey_id": "chen",
@@ -17237,6 +17440,16 @@
           "access_level": "legacy_import",
           "locator": "method-237",
           "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+        },
+        {
+          "field": "first_public_date",
+          "source_type": "primary_paper",
+          "access_level": "metadata",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Gao_3D_Gaussian_Map_with_Open-Set_Semantic_Grouping_for_Vision-Language_Navigation_ICCV_2025_paper.html",
+          "locator": "官方论文集标题、作者与 BibTeX 的 month/year；并对照论文正文",
+          "summary": "目前可确认的公开记录为 ICCV 2025 论文集，BibTeX 月份为 October；按月份记录，不推定具体日或更早预印本。",
+          "checked_at": "2026-11-14",
+          "url_status": "cached"
         }
       ]
     },
@@ -19998,16 +20211,20 @@
     {
       "id": "paper-method-269",
       "title": "Gaussian-based world model: gaussian priors for voxel-based occupancy prediction and future motion prediction",
-      "authors": [],
-      "url": "https://scholar.google.com/scholar?q=Gaussian-based%20World%20Model%3A%20Gaussian%20priors%20for%20voxel-based%20occupancy%20prediction%20and%20future%20motion%20prediction",
+      "authors": [
+        "Tuo Feng",
+        "Wenguan Wang",
+        "Yi Yang"
+      ],
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Feng_Gaussian-based_World_Model_Gaussian_Priors_for_Voxel-Based_Occupancy_Prediction_and_ICCV_2025_paper.html",
       "doi": null,
       "arxiv_id": null,
-      "first_public_date": null,
-      "publication_date": null,
-      "venue": null,
-      "publication_status": "unknown",
-      "date_basis": "时间：2025 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
-      "verification": "pending",
+      "first_public_date": "2025-10",
+      "publication_date": "2025-10",
+      "venue": "ICCV 2025",
+      "publication_status": "published",
+      "date_basis": "目前可确认的公开记录为 ICCV 2025 论文集，BibTeX 月份为 October；按月份记录，不推定具体日或更早预印本。",
+      "verification": "partial",
       "provenance": [
         {
           "survey_id": "chen",
@@ -20035,6 +20252,16 @@
           "access_level": "legacy_import",
           "locator": "method-269",
           "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+        },
+        {
+          "field": "first_public_date",
+          "source_type": "primary_paper",
+          "access_level": "metadata",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Feng_Gaussian-based_World_Model_Gaussian_Priors_for_Voxel-Based_Occupancy_Prediction_and_ICCV_2025_paper.html",
+          "locator": "官方论文集标题、作者与 BibTeX 的 month/year；并对照论文正文",
+          "summary": "目前可确认的公开记录为 ICCV 2025 论文集，BibTeX 月份为 October；按月份记录，不推定具体日或更早预印本。",
+          "checked_at": "2026-11-14",
+          "url_status": "cached"
         }
       ]
     },
@@ -20127,16 +20354,25 @@
     {
       "id": "paper-method-272",
       "title": "Splat-mover: multi-stage, open-vocabulary robotic manipulation via editable gaussian splatting",
-      "authors": [],
+      "authors": [
+        "Ola Shorinwa",
+        "Johnathan Tucker",
+        "Aliyah Smith",
+        "Aiden Swann",
+        "Timothy Chen",
+        "Roya Firoozi",
+        "Monroe Kennedy III",
+        "Mac Schwager"
+      ],
       "url": "https://arxiv.org/abs/2405.04378",
       "doi": null,
       "arxiv_id": "2405.04378",
-      "first_public_date": null,
+      "first_public_date": "2024-05-07",
       "publication_date": null,
       "venue": null,
       "publication_status": "unknown",
-      "date_basis": "时间：2024 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
-      "verification": "pending",
+      "date_basis": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+      "verification": "partial",
       "provenance": [
         {
           "survey_id": "chen",
@@ -20156,6 +20392,16 @@
           "access_level": "legacy_import",
           "locator": "method-272",
           "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+        },
+        {
+          "field": "first_public_date",
+          "source_type": "primary_paper",
+          "access_level": "metadata",
+          "url": "https://arxiv.org/abs/2405.04378",
+          "locator": "Submission history, [v1]",
+          "summary": "arXiv Submission history 的 v1 首次提交记录；不使用最近修订日期。",
+          "checked_at": "2026-11-14",
+          "url_status": "verified"
         }
       ]
     },
@@ -22524,16 +22770,26 @@
     {
       "id": "paper-method-300",
       "title": "HHAvatar: Gaussian Head Avatar with Dynamic Hairs",
-      "authors": [],
+      "authors": [
+        "Zhanfeng Liao",
+        "Yuelang Xu",
+        "Zhe Li",
+        "Qijing Li",
+        "Boyao Zhou",
+        "Ruifeng Bai",
+        "Di Xu",
+        "Hongwen Zhang",
+        "Yebin Liu"
+      ],
       "url": "https://arxiv.org/abs/2312.03029v3",
       "doi": null,
       "arxiv_id": "2312.03029",
-      "first_public_date": null,
+      "first_public_date": "2024-11-20",
       "publication_date": null,
       "venue": null,
       "publication_status": "unknown",
-      "date_basis": "重光照扩展依据arXiv v4修订年月；HHAvatar扩展时间待核，不沿用原稿首次年月。",
-      "verification": "pending",
+      "date_basis": "图中 HHAvatar 动态头发扩展采用 v3（2024-11-20）的首次公开记录；v1/v2 为 Gaussian Head Avatar 原稿（最早 2023-12-05），不将原稿日期套用于扩展方法。",
+      "verification": "partial",
       "provenance": [],
       "evidence": [
         {
@@ -22544,6 +22800,33 @@
           "access_level": "legacy_import",
           "locator": "method-300",
           "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+        },
+        {
+          "field": "first_public_date",
+          "source_type": "primary_paper",
+          "access_level": "metadata",
+          "url": "https://arxiv.org/abs/2312.03029v3",
+          "locator": "Submission history, [v3]；对照 v1/v2 的题名和 I Introduction",
+          "summary": "图中 HHAvatar 动态头发扩展采用 v3（2024-11-20）的首次公开记录；v1/v2 为 Gaussian Head Avatar 原稿（最早 2023-12-05），不将原稿日期套用于扩展方法。",
+          "checked_at": "2026-11-14",
+          "url_status": "verified"
+        }
+      ],
+      "version_history": [
+        {
+          "version": "v1",
+          "date": "2023-12-05",
+          "title": "Gaussian Head Avatar: Ultra High-fidelity Head Avatar via Dynamic Gaussians"
+        },
+        {
+          "version": "v2",
+          "date": "2024-03-30",
+          "title": "Gaussian Head Avatar: Ultra High-fidelity Head Avatar via Dynamic Gaussians"
+        },
+        {
+          "version": "v3",
+          "date": "2024-11-20",
+          "title": "HHAvatar: Gaussian Head Avatar with Dynamic Hairs"
         }
       ]
     },
@@ -75627,6 +75910,450 @@
           "summary": "正式 PDF 明确包括 DepthSplat + LGTM 变体。"
         }
       ]
+    },
+    {
+      "id": "edge-source-review-1-66",
+      "source": "method-1",
+      "target": "method-66",
+      "type": "extension",
+      "description": "可变形径向核",
+      "basis": "DRK 针对原始高斯核的形状与平滑约束，将场景基元推广为可调径向基与边缘锐度的平面核。",
+      "claim_basis": "fact",
+      "confidence": null,
+      "verification": "verified",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2412.11752v2",
+          "locator": "1 Introduction；3 Preliminaries；4 Method",
+          "summary": "DRK 针对原始高斯核的形状与平滑约束，将场景基元推广为可调径向基与边缘锐度的平面核。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-78-66",
+      "source": "method-78",
+      "target": "method-66",
+      "type": "borrow",
+      "description": "二维平面基元",
+      "basis": "作者明确以 2D-GS 的成功为动机，采用平面核并把二维高斯作为径向核的特例；这里记录平面基元机制的借鉴。",
+      "claim_basis": "fact",
+      "confidence": null,
+      "verification": "verified",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2412.11752v2",
+          "locator": "1 Introduction；4.1 Radial Basis",
+          "summary": "作者明确以 2D-GS 的成功为动机，采用平面核并把二维高斯作为径向核的特例；这里记录平面基元机制的借鉴。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-1-69",
+      "source": "method-1",
+      "target": "method-69",
+      "type": "extension",
+      "description": "Beta 核及颜色编码",
+      "basis": "DBS 修改 3DGS 的高斯几何核和低阶球谐颜色表达，分别引入可变形 Beta 核与 Spherical Beta；不是由题名相似推定其继承其他 Beta 方法。",
+      "claim_basis": "fact",
+      "confidence": null,
+      "verification": "verified",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2501.18630v2",
+          "locator": "1 Introduction；3 Deformable Beta Splatting",
+          "summary": "DBS 修改 3DGS 的高斯几何核和低阶球谐颜色表达，分别引入可变形 Beta 核与 Spherical Beta；不是由题名相似推定其继承其他 Beta 方法。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-1-73",
+      "source": "method-1",
+      "target": "method-73",
+      "type": "borrow",
+      "description": "二维图像表示",
+      "basis": "GaussianImage 明确从 3D Gaussian Splatting 的显式表示及可微光栅化出发，改用二维高斯和累积求和渲染完成图像拟合与压缩。它不同于用于三维表面重建的 2DGS。",
+      "claim_basis": "fact",
+      "confidence": null,
+      "verification": "verified",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2403.08551v5",
+          "locator": "1 Introduction；2.2 Gaussian Splatting；3 Method",
+          "summary": "GaussianImage 明确从 3D Gaussian Splatting 的显式表示及可微光栅化出发，改用二维高斯和累积求和渲染完成图像拟合与压缩。它不同于用于三维表面重建的 2DGS。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-1-146",
+      "source": "method-1",
+      "target": "method-146",
+      "type": "extension",
+      "description": "X-ray 成像",
+      "basis": "X-Gaussian 将 3DGS 框架拓展到 X-ray 新视角合成，重设计辐射强度高斯模型、可微辐射光栅化和扫描器初始化。",
+      "claim_basis": "fact",
+      "confidence": null,
+      "verification": "verified",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2403.04116v3",
+          "locator": "2.2 Gaussian Splatting；3 Method",
+          "summary": "X-Gaussian 将 3DGS 框架拓展到 X-ray 新视角合成，重设计辐射强度高斯模型、可微辐射光栅化和扫描器初始化。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-56-147",
+      "source": "method-56",
+      "target": "method-147",
+      "type": "extension",
+      "description": "内镜动态重建",
+      "basis": "Endo-4DGS 在方法部分明确引用 Wu 等 4D-GS，采用多分辨率 HexPlane 编码和高斯形变解码，并加入内镜伪深度初始化及置信度引导。",
+      "claim_basis": "fact",
+      "confidence": null,
+      "verification": "verified",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2401.16416v4",
+          "locator": "2.2 Proposed Methodology：4D Gaussian Splatting for Deformable Scene Representation；参考文献 [22]",
+          "summary": "Endo-4DGS 在方法部分明确引用 Wu 等 4D-GS，采用多分辨率 HexPlane 编码和高斯形变解码，并加入内镜伪深度初始化及置信度引导。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-1-161",
+      "source": "method-1",
+      "target": "method-161",
+      "type": "extension",
+      "description": "对象移除",
+      "basis": "GScream 使用 3DGS 场景表示，通过单目深度引导与跨注意力特征传播改善对象移除后的几何和纹理一致性。",
+      "claim_basis": "fact",
+      "confidence": null,
+      "verification": "verified",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2404.13679v1",
+          "locator": "2.2 Object Removal；3.1 Preliminary；3.2–3.3",
+          "summary": "GScream 使用 3DGS 场景表示，通过单目深度引导与跨注意力特征传播改善对象移除后的几何和纹理一致性。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-153-161",
+      "source": "method-153",
+      "target": "method-161",
+      "type": "theme",
+      "description": "对象移除方法对照",
+      "basis": "两者均处理高斯场景编辑与对象移除；GScream 将 GaussianEditor 作为比较对象，比较不等于直接继承。",
+      "claim_basis": "inference",
+      "confidence": null,
+      "verification": "partial",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2404.13679v1",
+          "locator": "7.1 Comparison with GaussianEditor",
+          "summary": "两者均处理高斯场景编辑与对象移除；GScream 将 GaussianEditor 作为比较对象，比较不等于直接继承。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-1-175",
+      "source": "method-1",
+      "target": "method-175",
+      "type": "extension",
+      "description": "网格约束形变",
+      "basis": "GaussianMesh 将原始离散高斯绑定到显式网格，联合细分网格与高斯并通过网格操控实现大尺度形变。",
+      "claim_basis": "fact",
+      "confidence": null,
+      "verification": "verified",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2402.04796v1",
+          "locator": "I Introduction；III-B Mesh-based Gaussian Splatting；III-C Editable Gaussian",
+          "summary": "GaussianMesh 将原始离散高斯绑定到显式网格，联合细分网格与高斯并通过网格操控实现大尺度形变。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-157-175",
+      "source": "method-157",
+      "target": "method-175",
+      "type": "theme",
+      "description": "同一工作的题名对照",
+      "basis": "相同作者、网格绑定机制和摘要表明这两条很可能对应 GaussianMesh 的预印本与正式题名；这是版本对照，不表示两个独立方法之间的继承。保留原 ID，待去重合并时处理。",
+      "claim_basis": "inference",
+      "confidence": null,
+      "verification": "partial",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "metadata",
+          "url": "https://arxiv.org/abs/2402.04796",
+          "locator": "标题、作者、摘要；与机构正式发表记录对照",
+          "summary": "相同作者、网格绑定机制和摘要表明这两条很可能对应 GaussianMesh 的预印本与正式题名；这是版本对照，不表示两个独立方法之间的继承。保留原 ID，待去重合并时处理。",
+          "checked_at": "2026-11-14"
+        },
+        {
+          "source_type": "primary_paper",
+          "access_level": "metadata",
+          "url": "https://researchportal.hkust.edu.hk/en/publications/real-time-large-scale-deformation-of-gaussian-splatting/",
+          "locator": "正式题名、作者、DOI、摘要",
+          "summary": "机构记录的 GaussianMesh 题名与预印本为同一研究工作的候选记录。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-59-181",
+      "source": "method-59",
+      "target": "method-181",
+      "type": "extension",
+      "description": "学习材料参数",
+      "basis": "DreamPhysics 明确沿用 PhysGaussian 的高斯状态与 MPM 模拟框架，利用视频扩散先验学习材料物理属性，而非人工逐项指定。",
+      "claim_basis": "fact",
+      "confidence": null,
+      "verification": "verified",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2406.01476v3",
+          "locator": "Preliminaries：Material Point Method；DreamPhysics",
+          "summary": "DreamPhysics 明确沿用 PhysGaussian 的高斯状态与 MPM 模拟框架，利用视频扩散先验学习材料物理属性，而非人工逐项指定。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-84-205",
+      "source": "method-84",
+      "target": "method-205",
+      "type": "borrow",
+      "description": "像素对齐高斯",
+      "basis": "DiffusionGS 明确采用 Splatter Image 的像素对齐高斯输出表示，并将其放入扩散去噪器逐步预测。",
+      "claim_basis": "fact",
+      "confidence": null,
+      "verification": "verified",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2411.14384v5",
+          "locator": "3.1 DiffusionGS：Our 3D Diffusion；参考文献 [65]",
+          "summary": "DiffusionGS 明确采用 Splatter Image 的像素对齐高斯输出表示，并将其放入扩散去噪器逐步预测。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-1-206",
+      "source": "method-1",
+      "target": "method-206",
+      "type": "borrow",
+      "description": "高斯表示与渲染引导",
+      "basis": "GSD 将原始高斯椭球参数及可微 splatting 用于三维扩散先验和视角引导采样，方法第 3 节明确给出该表示与混合公式。",
+      "claim_basis": "fact",
+      "confidence": null,
+      "verification": "verified",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2407.04237v4",
+          "locator": "3 Background: Gaussian Splatting；4.1–4.2",
+          "summary": "GSD 将原始高斯椭球参数及可微 splatting 用于三维扩散先验和视角引导采样，方法第 3 节明确给出该表示与混合公式。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-206-205",
+      "source": "method-206",
+      "target": "method-205",
+      "type": "theme",
+      "description": "高斯扩散模型对照",
+      "basis": "GSD 在高斯集合上学习生成先验，DiffusionGS 在图像条件去噪过程中输出像素对齐高斯；两者同属高斯扩散建模，此边不声明直接继承。",
+      "claim_basis": "inference",
+      "confidence": null,
+      "verification": "partial",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2411.14384v5",
+          "locator": "3.1 DiffusionGS；对照 GSD 第 4 节",
+          "summary": "GSD 在高斯集合上学习生成先验，DiffusionGS 在图像条件去噪过程中输出像素对齐高斯；两者同属高斯扩散建模，此边不声明直接继承。",
+          "checked_at": "2026-11-14"
+        },
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2407.04237v4",
+          "locator": "4 Our Approach",
+          "summary": "GSD 对高斯集合建模并执行视角引导采样。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-1-237",
+      "source": "method-1",
+      "target": "method-237",
+      "type": "extension",
+      "description": "语义地图与导航",
+      "basis": "该导航方法沿用 3DGS 的高斯参数化、深度排序混合及可微渲染，加入语义属性构造导航地图。",
+      "claim_basis": "fact",
+      "confidence": null,
+      "verification": "verified",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2605.26500",
+          "locator": "3.1 Egocentric Scene Map；公式 (3)–(6)；参考文献 [37]",
+          "summary": "该导航方法沿用 3DGS 的高斯参数化、深度排序混合及可微渲染，加入语义属性构造导航地图。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-227-237",
+      "source": "method-227",
+      "target": "method-237",
+      "type": "theme",
+      "description": "语言语义地图应用",
+      "basis": "LangSplat 和 3D Gaussian Map 都将语言或语义属性嵌入三维高斯；后者服务视觉语言导航，此处仅作机制和任务对照。",
+      "claim_basis": "inference",
+      "confidence": null,
+      "verification": "partial",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2605.26500",
+          "locator": "2 Related Work；3.2 Open-Set Semantic Grouping",
+          "summary": "LangSplat 和 3D Gaussian Map 都将语言或语义属性嵌入三维高斯；后者服务视觉语言导航，此处仅作机制和任务对照。",
+          "checked_at": "2026-11-14"
+        },
+        {
+          "source_type": "primary_paper",
+          "access_level": "metadata",
+          "url": "https://arxiv.org/abs/2312.16084",
+          "locator": "论文摘要与方法表示",
+          "summary": "LangSplat 的语言高斯表示作为既有数据库中的对照方法。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-1-269",
+      "source": "method-1",
+      "target": "method-269",
+      "type": "theme",
+      "description": "高斯先验与占用预测",
+      "basis": "GWM 利用高斯先验服务体素占用、场景演化及运动预测；这里只对照高斯场景表达的应用方向，不宣称继承原始 3DGS 的渲染算法。",
+      "claim_basis": "inference",
+      "confidence": null,
+      "verification": "partial",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "abstract",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Feng_Gaussian-based_World_Model_Gaussian_Priors_for_Voxel-Based_Occupancy_Prediction_and_ICCV_2025_paper.html",
+          "locator": "官方论文集摘要；论文公开索引中的 Abstract",
+          "summary": "GWM 利用高斯先验服务体素占用、场景演化及运动预测；这里只对照高斯场景表达的应用方向，不宣称继承原始 3DGS 的渲染算法。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-1-272",
+      "source": "method-1",
+      "target": "method-272",
+      "type": "extension",
+      "description": "开放词汇机器人操作",
+      "basis": "Splat-MOVER 在 3DGS 的表示和可微渲染中加入语义及抓取可供性特征，并提供场景编辑与多阶段抓取模块。",
+      "claim_basis": "fact",
+      "confidence": null,
+      "verification": "verified",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2405.04378v4",
+          "locator": "2 Preliminaries；3 ASK-Splat；4 SEE-Splat",
+          "summary": "Splat-MOVER 在 3DGS 的表示和可微渲染中加入语义及抓取可供性特征，并提供场景编辑与多阶段抓取模块。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-227-272",
+      "source": "method-227",
+      "target": "method-272",
+      "type": "theme",
+      "description": "语义高斯操作应用",
+      "basis": "两者均压缩并渲染语言语义特征；Splat-MOVER 进一步处理抓取可供性与场景编辑。文中引用 LangSplat 不能单独证明直接继承，因此仅作同方向关联。",
+      "claim_basis": "inference",
+      "confidence": null,
+      "verification": "partial",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2405.04378v4",
+          "locator": "3 ASK-Splat；A.1 Grounding Language Semantics；参考文献 [30]",
+          "summary": "两者均压缩并渲染语言语义特征；Splat-MOVER 进一步处理抓取可供性与场景编辑。文中引用 LangSplat 不能单独证明直接继承，因此仅作同方向关联。",
+          "checked_at": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "edge-source-review-297-300",
+      "source": "method-297",
+      "target": "method-300",
+      "type": "extension",
+      "description": "动态头发扩展",
+      "basis": "HHAvatar 引言明确说明其初版发表于 CVPR 2024，并在 Gaussian Head Avatar 上加入独立头发形变、时序状态和遮挡感知建模。",
+      "claim_basis": "fact",
+      "confidence": null,
+      "verification": "verified",
+      "evidence": [
+        {
+          "source_type": "primary_paper",
+          "access_level": "full_text",
+          "url": "https://arxiv.org/html/2312.03029v3",
+          "locator": "I Introduction：preliminary version；III-A2 Dynamic Hair；参考文献 [33]",
+          "summary": "HHAvatar 引言明确说明其初版发表于 CVPR 2024，并在 Gaussian Head Avatar 上加入独立头发形变、时序状态和遮挡感知建模。",
+          "checked_at": "2026-11-14"
+        }
+      ]
     }
   ],
   "surveys": [
@@ -75667,17 +76394,628 @@
     "domain": "3D Gaussian Splatting",
     "title": "3DGS · 总方法合集与技术演进图",
     "description": "按技术方向整理 3DGS 方法、论文来源及技术关联。",
-    "version": "1.0",
+    "version": "1.1",
     "search_cutoff": "2026-10-13",
-    "search_log": [],
-    "coverage_limitations": "基于既有文献记录迁移的示例；本次未重新检索、阅读原文或访问链接，不代表穷尽收录。",
+    "search_log": [
+      {
+        "date": "2026-11-14",
+        "scope": "14 个既有缺日期且孤立节点的局部补全，不改变全库原检索截止范围",
+        "channels": [
+          "arXiv abstract and version history",
+          "arXiv HTML",
+          "CVF official proceedings",
+          "HKUST research portal",
+          "author project pages"
+        ],
+        "query_terms": [
+          "exact titles of the 14 affected methods",
+          "GaussianMesh publication identity",
+          "HHAvatar v1/v2/v3 title history"
+        ],
+        "limitations": "未重新核验全库；GWM 的 CVF 页面直接访问受限，未声称已阅读全文。"
+      }
+    ],
+    "coverage_limitations": "基于既有文献记录迁移；2026-11-14 局部复核 14 个原缺日期且无连线的方法，补充日期、作者和有来源的技术关系。未对全库逐篇重读，也未开展全领域最新文献检索，不代表穷尽收录。",
     "first_html_delivered": true,
     "review_decisions": [],
     "unresolved": [
-      "导入的论文信息、分类和技术关系保留待核状态，需按原始论文继续复核。",
-      "部分作者、首次公开日期及方法价值尚未补全；缺失信息保持为空。",
-      "旧版日期与发表记录仅作来源记录展示，未重新核验。"
+      "原有 464 条关系与本次补充关系分别保留证据和核验状态；其余孤立方法仍需逐项分析，不强行连线。",
+      "部分作者、方法价值和文献元数据尚未补全。",
+      "method-157 与 method-175 很可能为 GaussianMesh 的同一工作题名记录；保留稳定 ID，未进行自动合并。",
+      "3D Gaussian Map 与 GWM 采用官方论文集 2025-10 记录，月份精度不代表已穷尽更早公开版本；GWM 的 CVF 直接访问返回 403，依据官方索引缓存和公开论文摘要进行局部整理。",
+      "HHAvatar 节点使用 v3 动态头发扩展的公开日期，不混用其原稿 v1 的日期。"
     ],
-    "source_catalog": "3dgs-method-catalog"
+    "source_catalog": "3dgs-method-catalog",
+    "change_log": [
+      {
+        "date": "2026-11-14",
+        "action": "repair_isolated_methods",
+        "method_ids": [
+          "method-146",
+          "method-147",
+          "method-161",
+          "method-175",
+          "method-181",
+          "method-205",
+          "method-206",
+          "method-237",
+          "method-269",
+          "method-272",
+          "method-300",
+          "method-66",
+          "method-69",
+          "method-73"
+        ],
+        "added_edge_ids": [
+          "edge-source-review-1-66",
+          "edge-source-review-78-66",
+          "edge-source-review-1-69",
+          "edge-source-review-1-73",
+          "edge-source-review-1-146",
+          "edge-source-review-56-147",
+          "edge-source-review-1-161",
+          "edge-source-review-153-161",
+          "edge-source-review-1-175",
+          "edge-source-review-157-175",
+          "edge-source-review-59-181",
+          "edge-source-review-84-205",
+          "edge-source-review-1-206",
+          "edge-source-review-206-205",
+          "edge-source-review-1-237",
+          "edge-source-review-227-237",
+          "edge-source-review-1-269",
+          "edge-source-review-1-272",
+          "edge-source-review-227-272",
+          "edge-source-review-297-300"
+        ],
+        "previous_paper_records": [
+          {
+            "id": "paper-method-66",
+            "title": "Deformable radial kernel splatting",
+            "authors": [],
+            "url": "https://scholar.google.com/scholar?q=Deformable%20radial%20kernel%20splatting",
+            "doi": null,
+            "arxiv_id": null,
+            "first_public_date": null,
+            "publication_date": null,
+            "venue": null,
+            "publication_status": "unknown",
+            "date_basis": "时间：2025 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
+            "verification": "pending",
+            "provenance": [
+              {
+                "survey_id": "chen",
+                "reference_label": "Huang et al. (2025b)",
+                "locator": "Huang et al. (2025b)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib344",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              }
+            ],
+            "evidence": [
+              {
+                "field": "legacy_record",
+                "source_id": "3dgs-method-catalog",
+                "url": "https://scholar.google.com/scholar?q=Deformable%20radial%20kernel%20splatting",
+                "source_type": "legacy",
+                "access_level": "legacy_import",
+                "locator": "method-66",
+                "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+              }
+            ]
+          },
+          {
+            "id": "paper-method-69",
+            "title": "Deformable beta splatting",
+            "authors": [],
+            "url": "https://scholar.google.com/scholar?q=Deformable%20beta%20splatting",
+            "doi": null,
+            "arxiv_id": null,
+            "first_public_date": null,
+            "publication_date": null,
+            "venue": null,
+            "publication_status": "unknown",
+            "date_basis": "时间：2025 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
+            "verification": "pending",
+            "provenance": [
+              {
+                "survey_id": "chen",
+                "reference_label": "Liu et al. (2025b)",
+                "locator": "Liu et al. (2025b)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib346",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              }
+            ],
+            "evidence": [
+              {
+                "field": "legacy_record",
+                "source_id": "3dgs-method-catalog",
+                "url": "https://scholar.google.com/scholar?q=Deformable%20beta%20splatting",
+                "source_type": "legacy",
+                "access_level": "legacy_import",
+                "locator": "method-69",
+                "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+              }
+            ]
+          },
+          {
+            "id": "paper-method-73",
+            "title": "GaussianImage: 1000 FPS Image Representation and Compression by 2D Gaussian Splatting",
+            "authors": [],
+            "url": "https://arxiv.org/abs/2403.08551",
+            "doi": null,
+            "arxiv_id": "2403.08551",
+            "first_public_date": null,
+            "publication_date": null,
+            "venue": null,
+            "publication_status": "unknown",
+            "date_basis": "时间：2024 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
+            "verification": "pending",
+            "provenance": [
+              {
+                "survey_id": "wu",
+                "reference_label": "[65]",
+                "locator": "[65]",
+                "url": "https://arxiv.org/html/2403.11134v2#bib.bib65",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              },
+              {
+                "survey_id": "chen",
+                "reference_label": "Zhang et al. (2024k)",
+                "locator": "Zhang et al. (2024k)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib226",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              },
+              {
+                "survey_id": "chen",
+                "reference_label": "Zhang et al. (2024k)",
+                "locator": "Zhang et al. (2024k)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib226",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              }
+            ],
+            "evidence": [
+              {
+                "field": "legacy_record",
+                "source_id": "3dgs-method-catalog",
+                "url": "https://arxiv.org/abs/2403.08551",
+                "source_type": "legacy",
+                "access_level": "legacy_import",
+                "locator": "method-73",
+                "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+              }
+            ]
+          },
+          {
+            "id": "paper-method-146",
+            "title": "Radiative Gaussian Splatting for Efficient X-ray Novel View Synthesis",
+            "authors": [],
+            "url": "https://arxiv.org/abs/2403.04116",
+            "doi": null,
+            "arxiv_id": "2403.04116",
+            "first_public_date": null,
+            "publication_date": null,
+            "venue": null,
+            "publication_status": "unknown",
+            "date_basis": "时间：2024 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
+            "verification": "pending",
+            "provenance": [
+              {
+                "survey_id": "wu",
+                "reference_label": "[131]",
+                "locator": "[131]",
+                "url": "https://arxiv.org/html/2403.11134v2#bib.bib131",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              },
+              {
+                "survey_id": "chen",
+                "reference_label": "Cai et al. (2024a)",
+                "locator": "Cai et al. (2024a)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib199",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              }
+            ],
+            "evidence": [
+              {
+                "field": "legacy_record",
+                "source_id": "3dgs-method-catalog",
+                "url": "https://arxiv.org/abs/2403.04116",
+                "source_type": "legacy",
+                "access_level": "legacy_import",
+                "locator": "method-146",
+                "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+              }
+            ]
+          },
+          {
+            "id": "paper-method-147",
+            "title": "Endo-4dgs: Distilling depth ranking for endoscopic monocular scene reconstruction with 4d gaussian splatting",
+            "authors": [],
+            "url": "https://arxiv.org/abs/2401.16416",
+            "doi": null,
+            "arxiv_id": "2401.16416",
+            "first_public_date": null,
+            "publication_date": null,
+            "venue": null,
+            "publication_status": "unknown",
+            "date_basis": "时间：2024 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
+            "verification": "pending",
+            "provenance": [
+              {
+                "survey_id": "wu",
+                "reference_label": "[91]",
+                "locator": "[91]",
+                "url": "https://arxiv.org/html/2403.11134v2#bib.bib91",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              },
+              {
+                "survey_id": "chen",
+                "reference_label": "Huang et al. (2024e)",
+                "locator": "Huang et al. (2024e)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib191",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              },
+              {
+                "survey_id": "chen",
+                "reference_label": "Huang et al. (2024e)",
+                "locator": "Huang et al. (2024e)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib191",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              },
+              {
+                "survey_id": "chen",
+                "reference_label": "Huang et al. (2024e)",
+                "locator": "Huang et al. (2024e)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib191",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              }
+            ],
+            "evidence": [
+              {
+                "field": "legacy_record",
+                "source_id": "3dgs-method-catalog",
+                "url": "https://arxiv.org/abs/2401.16416",
+                "source_type": "legacy",
+                "access_level": "legacy_import",
+                "locator": "method-147",
+                "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+              }
+            ]
+          },
+          {
+            "id": "paper-method-161",
+            "title": "GScream: learning 3d geometry and feature consistent gaussian splatting for object removal",
+            "authors": [],
+            "url": "https://arxiv.org/abs/2404.13679",
+            "doi": null,
+            "arxiv_id": "2404.13679",
+            "first_public_date": null,
+            "publication_date": null,
+            "venue": null,
+            "publication_status": "unknown",
+            "date_basis": "时间：2024 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
+            "verification": "pending",
+            "provenance": [
+              {
+                "survey_id": "chen",
+                "reference_label": "Wang et al. (2024e)",
+                "locator": "Wang et al. (2024e)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib278",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              }
+            ],
+            "evidence": [
+              {
+                "field": "legacy_record",
+                "source_id": "3dgs-method-catalog",
+                "url": "https://arxiv.org/abs/2404.13679",
+                "source_type": "legacy",
+                "access_level": "legacy_import",
+                "locator": "method-161",
+                "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+              }
+            ]
+          },
+          {
+            "id": "paper-method-175",
+            "title": "Real-time large-scale deformation of gaussian splatting",
+            "authors": [],
+            "url": "https://scholar.google.com/scholar?q=Real-time%20large-scale%20deformation%20of%20Gaussian%20splatting",
+            "doi": null,
+            "arxiv_id": null,
+            "first_public_date": null,
+            "publication_date": null,
+            "venue": null,
+            "publication_status": "unknown",
+            "date_basis": "时间：2024 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
+            "verification": "pending",
+            "provenance": [
+              {
+                "survey_id": "chen",
+                "reference_label": "Gao et al. (2024)",
+                "locator": "Gao et al. (2024)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib101",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              }
+            ],
+            "evidence": [
+              {
+                "field": "legacy_record",
+                "source_id": "3dgs-method-catalog",
+                "url": "https://scholar.google.com/scholar?q=Real-time%20large-scale%20deformation%20of%20Gaussian%20splatting",
+                "source_type": "legacy",
+                "access_level": "legacy_import",
+                "locator": "method-175",
+                "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+              }
+            ]
+          },
+          {
+            "id": "paper-method-181",
+            "title": "DreamPhysics: Learning Physics-Based 3D Dynamics with Video Diffusion Priors",
+            "authors": [],
+            "url": "https://arxiv.org/abs/2406.01476",
+            "doi": null,
+            "arxiv_id": "2406.01476",
+            "first_public_date": null,
+            "publication_date": null,
+            "venue": null,
+            "publication_status": "unknown",
+            "date_basis": "时间：2025 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
+            "verification": "pending",
+            "provenance": [
+              {
+                "survey_id": "chen",
+                "reference_label": "Huang et al. (2025a)",
+                "locator": "Huang et al. (2025a)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib301",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              }
+            ],
+            "evidence": [
+              {
+                "field": "legacy_record",
+                "source_id": "3dgs-method-catalog",
+                "url": "https://arxiv.org/abs/2406.01476",
+                "source_type": "legacy",
+                "access_level": "legacy_import",
+                "locator": "method-181",
+                "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+              }
+            ]
+          },
+          {
+            "id": "paper-method-205",
+            "title": "Baking gaussian splatting into diffusion denoiser for fast and scalable single-stage image-to-3d generation and reconstruction",
+            "authors": [],
+            "url": "https://scholar.google.com/scholar?q=Baking%20Gaussian%20splatting%20into%20diffusion%20denoiser%20for%20fast%20and%20scalable%20single-stage%20image-to-3D%20generation%20and%20reconstruction",
+            "doi": null,
+            "arxiv_id": null,
+            "first_public_date": null,
+            "publication_date": null,
+            "venue": null,
+            "publication_status": "unknown",
+            "date_basis": "时间：2025 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
+            "verification": "pending",
+            "provenance": [
+              {
+                "survey_id": "chen",
+                "reference_label": "Cai et al. (2025)",
+                "locator": "Cai et al. (2025)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib97",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              }
+            ],
+            "evidence": [
+              {
+                "field": "legacy_record",
+                "source_id": "3dgs-method-catalog",
+                "url": "https://scholar.google.com/scholar?q=Baking%20Gaussian%20splatting%20into%20diffusion%20denoiser%20for%20fast%20and%20scalable%20single-stage%20image-to-3D%20generation%20and%20reconstruction",
+                "source_type": "legacy",
+                "access_level": "legacy_import",
+                "locator": "method-205",
+                "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+              }
+            ]
+          },
+          {
+            "id": "paper-method-206",
+            "title": "GSD: view-guided gaussian splatting diffusion for 3d reconstruction",
+            "authors": [],
+            "url": "https://arxiv.org/abs/2407.04237",
+            "doi": null,
+            "arxiv_id": "2407.04237",
+            "first_public_date": null,
+            "publication_date": null,
+            "venue": null,
+            "publication_status": "unknown",
+            "date_basis": "时间：2024 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
+            "verification": "pending",
+            "provenance": [
+              {
+                "survey_id": "chen",
+                "reference_label": "Mu et al. (2024)",
+                "locator": "Mu et al. (2024)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib280",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              }
+            ],
+            "evidence": [
+              {
+                "field": "legacy_record",
+                "source_id": "3dgs-method-catalog",
+                "url": "https://arxiv.org/abs/2407.04237",
+                "source_type": "legacy",
+                "access_level": "legacy_import",
+                "locator": "method-206",
+                "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+              }
+            ]
+          },
+          {
+            "id": "paper-method-237",
+            "title": "3d gaussian map with open-set semantic grouping for vision-language navigation",
+            "authors": [],
+            "url": "https://scholar.google.com/scholar?q=3D%20Gaussian%20map%20with%20open-set%20semantic%20grouping%20for%20vision-%20language%20navigation",
+            "doi": null,
+            "arxiv_id": null,
+            "first_public_date": null,
+            "publication_date": null,
+            "venue": null,
+            "publication_status": "unknown",
+            "date_basis": "时间：2025 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
+            "verification": "pending",
+            "provenance": [
+              {
+                "survey_id": "chen",
+                "reference_label": "Gao et al. (2025)",
+                "locator": "Gao et al. (2025)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib98",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              },
+              {
+                "survey_id": "chen",
+                "reference_label": "Gao et al. (2025)",
+                "locator": "Gao et al. (2025)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib98",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              }
+            ],
+            "evidence": [
+              {
+                "field": "legacy_record",
+                "source_id": "3dgs-method-catalog",
+                "url": "https://scholar.google.com/scholar?q=3D%20Gaussian%20map%20with%20open-set%20semantic%20grouping%20for%20vision-%20language%20navigation",
+                "source_type": "legacy",
+                "access_level": "legacy_import",
+                "locator": "method-237",
+                "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+              }
+            ]
+          },
+          {
+            "id": "paper-method-269",
+            "title": "Gaussian-based world model: gaussian priors for voxel-based occupancy prediction and future motion prediction",
+            "authors": [],
+            "url": "https://scholar.google.com/scholar?q=Gaussian-based%20World%20Model%3A%20Gaussian%20priors%20for%20voxel-based%20occupancy%20prediction%20and%20future%20motion%20prediction",
+            "doi": null,
+            "arxiv_id": null,
+            "first_public_date": null,
+            "publication_date": null,
+            "venue": null,
+            "publication_status": "unknown",
+            "date_basis": "时间：2025 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
+            "verification": "pending",
+            "provenance": [
+              {
+                "survey_id": "chen",
+                "reference_label": "Feng et al. (2025)",
+                "locator": "Feng et al. (2025)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib99",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              },
+              {
+                "survey_id": "chen",
+                "reference_label": "Feng et al. (2025)",
+                "locator": "Feng et al. (2025)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib99",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              }
+            ],
+            "evidence": [
+              {
+                "field": "legacy_record",
+                "source_id": "3dgs-method-catalog",
+                "url": "https://scholar.google.com/scholar?q=Gaussian-based%20World%20Model%3A%20Gaussian%20priors%20for%20voxel-based%20occupancy%20prediction%20and%20future%20motion%20prediction",
+                "source_type": "legacy",
+                "access_level": "legacy_import",
+                "locator": "method-269",
+                "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+              }
+            ]
+          },
+          {
+            "id": "paper-method-272",
+            "title": "Splat-mover: multi-stage, open-vocabulary robotic manipulation via editable gaussian splatting",
+            "authors": [],
+            "url": "https://arxiv.org/abs/2405.04378",
+            "doi": null,
+            "arxiv_id": "2405.04378",
+            "first_public_date": null,
+            "publication_date": null,
+            "venue": null,
+            "publication_status": "unknown",
+            "date_basis": "时间：2024 · 综述参考文献年份（非首次提出时间） · Google Scholar 标题检索",
+            "verification": "pending",
+            "provenance": [
+              {
+                "survey_id": "chen",
+                "reference_label": "Shorinwa et al. (2024)",
+                "locator": "Shorinwa et al. (2024)",
+                "url": "https://arxiv.org/html/2401.03890v9#bib.bib311",
+                "source_id": "3dgs-method-catalog",
+                "access_level": "legacy_import"
+              }
+            ],
+            "evidence": [
+              {
+                "field": "legacy_record",
+                "source_id": "3dgs-method-catalog",
+                "url": "https://arxiv.org/abs/2405.04378",
+                "source_type": "legacy",
+                "access_level": "legacy_import",
+                "locator": "method-272",
+                "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+              }
+            ]
+          },
+          {
+            "id": "paper-method-300",
+            "title": "HHAvatar: Gaussian Head Avatar with Dynamic Hairs",
+            "authors": [],
+            "url": "https://arxiv.org/abs/2312.03029v3",
+            "doi": null,
+            "arxiv_id": "2312.03029",
+            "first_public_date": null,
+            "publication_date": null,
+            "venue": null,
+            "publication_status": "unknown",
+            "date_basis": "重光照扩展依据arXiv v4修订年月；HHAvatar扩展时间待核，不沿用原稿首次年月。",
+            "verification": "pending",
+            "provenance": [],
+            "evidence": [
+              {
+                "field": "legacy_record",
+                "source_id": "3dgs-method-catalog",
+                "url": "https://arxiv.org/abs/2312.03029v3",
+                "source_type": "legacy",
+                "access_level": "legacy_import",
+                "locator": "method-300",
+                "summary": "保留原文件信息，未重新阅读全文或复核事实。"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
