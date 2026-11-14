@@ -48,11 +48,17 @@ HTML 包含两个页面，资源内嵌，可通过本地浏览器打开：
 | 总方法合集 | 分类导航、搜索、年份与代表方法筛选、排序分页、论文与方法详情、当前合集导出 |
 | 技术演进关系图 | 时间轴与技术路线、精选和全部方法、关系筛选、节点与连线详情、定位高亮、缩放拖动、全屏及 SVG 导出 |
 
-下面的截图由仓库中**明确虚构的示例数据及其测试变体**生成，仅展示界面与交互，不代表真实研究结论。
+仓库提供一个基于既有文献记录整理的 **3DGS 实际示例**：493 个方法、21 类技术方向、464 条技术关联。使用当前通用模板展示方法合集与演进图，来源和待核信息可在详情中查看。
 
-![总方法合集](docs/images/method-catalog.png)
+- [查看示例说明](examples/3dgs/README.md)
+- [下载 HTML](examples/3dgs/index.html)：下载后本地打开，或克隆仓库后直接打开该文件。
+- [查看 JSON 数据](examples/3dgs/project-data.json)
 
-![技术演进关系图](docs/images/evolution-map.png)
+![3DGS 总方法合集](docs/images/3dgs-method-catalog.png)
+
+![3DGS 技术演进关系图](docs/images/3dgs-evolution-map.png)
+
+示例保留实际核验状态，不代表全部信息已核实或文献收录穷尽。另有 `assets/example-data.json` 作为小型虚构数据，用于脚本和交互测试。
 
 ## 本地构建与校验
 
@@ -65,6 +71,12 @@ python scripts/build_html.py assets/example-data.json --output output/evolution-
 ```
 
 打开 `output/evolution-map.html` 即可查看示例。示例中的待核警告是刻意保留的测试内容；结构校验通过不代表学术事实已核实。实际项目应按[数据契约](references/paper-extraction-schema.md)提供数据。
+
+重新构建 3DGS 实际示例：
+
+```bash
+python scripts/build_html.py examples/3dgs/project-data.json --output output/3dgs/index.html
+```
 
 ```bash
 python scripts/deduplicate_papers.py project.json --report output/duplicates.json
@@ -84,7 +96,8 @@ research-evolution-map/
 ├── assets/                 # 通用 HTML 模板与虚构示例
 ├── references/             # 工作流、分类、关系和证据规范
 ├── scripts/                # 校验、去重、构建、导出及自测
+├── examples/3dgs/          # 通用模板生成的 3DGS HTML 与 JSON
 └── docs/images/            # 示例界面截图
 ```
 
-核心执行规则见 [SKILL.md](SKILL.md)。仓库不包含私人文献库、原始论文全文、真实项目数据或构建与测试输出；请将研究资料保存在单独项目目录。
+核心执行规则见 [SKILL.md](SKILL.md)。除专门整理的示例外，私人文献库、原始论文全文及构建和测试输出均不纳入仓库；请将个人研究资料保存在单独项目目录。
