@@ -22,7 +22,7 @@ description: 根据科研综述和原始论文提取方法、整合文献、归�
 4. **归纳技术分类**：读 [taxonomy-guidelines.md](references/taxonomy-guidelines.md)。比较综述框架，从真实机制归纳一二级方向、主分类和辅助标签，定义边界、代表方法及分类依据，保留争议候选。
 5. **技术演进分析**：读 [relationship-classification.md](references/relationship-classification.md)。仅用 direct / extension / borrow / theme；逐边保存说明、依据、来源、原文位置、置信度、事实/推断和核验状态。优先阅读原论文 Introduction、Related Work、Method，识别基础、分叉、桥接、融合及并行研究。
 6. **沿路线补充文献**：读 [literature-search-strategy.md](references/literature-search-strategy.md)。按分类、前向引用、官方会刊目录、arXiv 和项目页检索。记录实际查询、日期、范围、纳入理由，发现新路线和桥接论文，保留分类和关系变更的依据及不确定性。
-7. **生成交互式 HTML**：读 [html-output-specification.md](references/html-output-specification.md)。构建方法合集与技术演进图；精选方法需说明代表性，同时保留全部方法视图。
+7. **生成交互式 HTML**：读 [html-output-specification.md](references/html-output-specification.md)。构建方法合集与包含全部收录方法的技术演进图，不自动筛选主线；方向、关系类型和搜索用于按需浏览，重置后恢复全部方法。
 8. **验收交付**：读 [quality-control.md](references/quality-control.md)。交付 HTML、完整 JSON、分类和关系 JSON、CSV/BibTeX、检索核验报告及待核清单。区分结构检查、浏览器实测和学术真实性核验，统一说明分类依据、未核信息及值得进一步讨论的问题。
 
 ## 确定性工具

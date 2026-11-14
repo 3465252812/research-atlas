@@ -44,9 +44,9 @@ dialog{max-width:760px;width:calc(100% - 36px);max-height:90dvh;padding:0;border
     </div>
   </section>
   <section id="evolution-view" role="tabpanel" aria-labelledby="evolution-tab" hidden>
-    <div class="section-heading"><h2>技术演进关系图</h2><p>横向按时间展开，纵向分技术路线。精选主线便于阅读，全部方法视图展示当前收录的方法。</p></div>
+    <div class="section-heading"><h2>技术演进关系图</h2><p>横向按时间展开，纵向分技术路线。展示当前收录的全部方法，可按技术方向或关系类型筛选。</p></div>
     <div class="toolbar graph-toolbar">
-      <div class="segmented" role="group" aria-label="图谱方法范围"><button type="button" data-scope="featured" class="active" aria-pressed="true">精选主线 <span id="featured-total"></span></button><button type="button" data-scope="all" aria-pressed="false">全部方法 0</button><span id="track-buttons" style="display:contents"></span></div>
+      <div class="segmented" role="group" aria-label="图谱方法范围"><button type="button" data-scope="all" class="active" aria-pressed="true">全部方法 0</button><span id="track-buttons" style="display:contents"></span></div>
       <label class="search-label"><span>检索节点</span><input id="graph-search" type="search" autocomplete="off" placeholder="搜索并定位方法"></label>
       <label><span>路线</span><select id="graph-direction"><option value="">全部技术方向</option></select></label>
       <label><span>关系</span><select id="graph-relations"><option value="all">全部关系</option><option value="technical">仅技术关联</option><option value="direct">仅明确依赖</option><option value="extension">仅框架扩展</option><option value="borrow">仅技术借鉴</option><option value="theme">仅同方向研究</option></select></label>
@@ -91,7 +91,7 @@ dialog{max-width:760px;width:calc(100% - 36px);max-height:90dvh;padding:0;border
   const researchLane=m=>{const p=researchPlacements.get(m.id),f=$('#graph-direction').value;return f&&p.memberships.includes(f)?f:p.primary;};
   const surveys = new Map(D.surveys.map(s=>[s.id,s]));
   const types = {direct:'明确依赖',extension:'框架扩展',borrow:'技术借鉴',theme:'同方向研究'};
-  const state = {view:'overview',direction:'',page:1,pageSize:24,scope:'featured',period:'all',selected:null,zoom:1,theme:'auto'};
+  const state = {view:'overview',direction:'',page:1,pageSize:24,scope:'all',period:'all',selected:null,zoom:1,theme:'auto'};
   let collection = [], graphMethods = [], graphEdges = [], positions = new Map(), graphWidth = 1660, graphHeight = 800;
   let searchTimer = null, graphTimer = null, pan = null;
   const searchable = new Map(D.methods.map(m=>[m.id,norm([m.name,m.title,m.tech,m.problem,m.category,m.publication?.label,groups.get(m.group).name,...m.papers.map(p=>p.title),...(m.authors||[]),...m.aliases,...m.modules,...m.tags].join(' '))]));
@@ -108,7 +108,7 @@ dialog{max-width:760px;width:calc(100% - 36px);max-height:90dvh;padding:0;border
     if([...select.options].some(o=>o.value===previous))select.value=previous;
   }
   directionOptions();
-  $('#featured-total').textContent=D.methods.filter(m=>m.featured).length;
+  $('#featured-only').closest('label').hidden=!D.methods.some(m=>m.featured);
 
   function showView(v,scroll=false) {
     state.view=v;
@@ -169,7 +169,7 @@ dialog{max-width:760px;width:calc(100% - 36px);max-height:90dvh;padding:0;border
     const q=$('#graph-search').value,group=$('#graph-direction').value;
     let list=D.methods.filter(m=>{
       if(state.scope==='research'){const p=researchPlacements.get(m.id);return p&&periodMatches(m)&&(!group||p.memberships.includes(group))&&matches(m,q);}
-      return (state.scope==='all'||state.scope==='featured'&&m.featured)&&(!group||inGroup(m,group))&&matches(m,q);
+      return (!group||inGroup(m,group))&&matches(m,q);
     });
     if($('#neighbor-only').checked&&state.selected){const ids=new Set([state.selected]);currentEdges().filter(e=>e.source===state.selected||e.target===state.selected).forEach(e=>{ids.add(e.source);ids.add(e.target);});list=D.methods.filter(m=>ids.has(m.id)&&(state.scope!=='research'||researchPlacements.has(m.id)));}
     return list;
@@ -228,9 +228,9 @@ dialog{max-width:760px;width:calc(100% - 36px);max-height:90dvh;padding:0;border
 
   function scopeButtons(){$$('[data-scope]').forEach(b=>{const active=b.dataset.scope===state.scope&&(state.scope!=='research'||b.dataset.track===D.research.id);b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});}
   $$('[data-scope]').forEach(b=>b.addEventListener('click',()=>{state.scope=b.dataset.scope;if(b.dataset.track)setTrack(b.dataset.track);state.period='all';$('#neighbor-only').checked=false;directionOptions();scopeButtons();renderGraph();if(state.selected)selectMethod(state.selected);}));
-  $('#graph-search').addEventListener('input',()=>{clearTimeout(graphTimer);graphTimer=setTimeout(()=>{if(state.scope==='featured'&&$('#graph-search').value){state.scope='all';scopeButtons();}renderGraph();if(graphMethods.length===1)selectMethod(graphMethods[0].id);},120);});
+  $('#graph-search').addEventListener('input',()=>{clearTimeout(graphTimer);graphTimer=setTimeout(()=>{renderGraph();if(graphMethods.length===1)selectMethod(graphMethods[0].id);},120);});
   ['graph-direction','graph-relations','neighbor-only'].forEach(id=>$('#'+id).addEventListener('change',()=>renderGraph()));
-  function resetGraph(){if(state.scope!=='research')state.scope='featured';state.selected=null;state.zoom=1;$('#graph-search').value='';$('#graph-direction').value='';$('#graph-relations').value='all';state.period='all';$('#neighbor-only').checked=false;directionOptions();scopeButtons();clearSelection();renderGraph();}
+  function resetGraph(){if(state.scope!=='research')state.scope='all';state.selected=null;state.zoom=1;$('#graph-search').value='';$('#graph-direction').value='';$('#graph-relations').value='all';state.period='all';$('#neighbor-only').checked=false;directionOptions();scopeButtons();clearSelection();renderGraph();}
   $('#graph-reset').addEventListener('click',resetGraph);$('#graph-empty-reset').addEventListener('click',()=>{if(state.scope!=='research')state.scope='all';$('#graph-search').value='';$('#graph-direction').value='';$('#neighbor-only').checked=false;directionOptions();scopeButtons();renderGraph();});
   function applyZoom(){$('#evolution-svg').style.width=graphWidth*state.zoom+'px';$('#evolution-svg').style.height=graphHeight*state.zoom+'px';$('#zoom-status').textContent=Math.round(state.zoom*100)+'%';$('#graph-viewport').style.height=document.fullscreenElement?'':Math.max(window.innerWidth<540?260:360,Math.min(720,window.innerHeight*.74,graphHeight*state.zoom+12))+'px';}
   function zoomTo(value,anchor=null){const v=$('#graph-viewport'),old=state.zoom,x=anchor?.x??v.clientWidth/2,y=anchor?.y??v.clientHeight/2;const gx=(v.scrollLeft+x)/old,gy=(v.scrollTop+y)/old;state.zoom=Math.max(.3,Math.min(2.2,value));applyZoom();v.scrollLeft=Math.max(0,gx*state.zoom-x);v.scrollTop=Math.max(0,gy*state.zoom-y);}
