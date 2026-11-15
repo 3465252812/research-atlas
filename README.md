@@ -216,6 +216,27 @@ research-atlas/
 
 </details>
 
+## Contributors
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://github.com/3465252812">
+        <img src="docs/brand/coffee-cat-avatar.png" width="64" height="64" alt="Coffee Cat 的 GitHub 头像"><br>
+        <strong>Coffee Cat</strong>
+      </a><br>
+      <sub>项目负责人 · 需求设计与内容审阅</sub>
+    </td>
+    <td align="center" width="50%">
+      <a href="https://github.com/openai/codex">
+        <img src="docs/brand/icon-terminal-2.svg" width="64" height="64" alt="Codex AI 编程助手"><br>
+        <strong>Codex</strong>
+      </a><br>
+      <sub>AI 辅助开发 · 文档整理与测试验证</sub>
+    </td>
+  </tr>
+</table>
+
 <p align="center">
   <a href="SKILL.md">Skill 使用规范</a> ·
   <a href="references/paper-extraction-schema.md">数据结构</a> ·
