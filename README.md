@@ -39,6 +39,8 @@
 
 <p align="center"><sub>上图为真实 3DGS 示例，点击可查看大图。交互体验请下载仓库后打开 <code>examples/3dgs/index.html</code>。</sub></p>
 
+<a name="主要功能"></a>
+
 ## <img src="docs/brand/icon-stack-2.svg" width="24" height="24" alt=""> 主要功能
 
 <p align="center">
@@ -49,6 +51,8 @@
   <picture><source media="(prefers-color-scheme: dark)" srcset="docs/brand/feature-search-dark.svg"><img src="docs/brand/feature-search-light.svg" width="406" alt="文献补充：沿技术路线寻找后续研究，保留已有 ID 和更新记录"></picture>
   <picture><source media="(prefers-color-scheme: dark)" srcset="docs/brand/feature-export-dark.svg"><img src="docs/brand/feature-export-light.svg" width="406" alt="交互交付：独立 HTML、结构化数据和文献清单，支持筛选、路径查看和导出"></picture>
 </p>
+
+<a name="安装"></a>
 
 ## <img src="docs/brand/icon-terminal-2.svg" width="24" height="24" alt=""> 安装
 
@@ -64,6 +68,8 @@ Windows 用户目录通常为 `%USERPROFILE%/.agents/skills/research-evolution-m
 
 数据脚本要求 **Python 3.10+**，只依赖标准库。文献阅读和联网检索由 Codex 结合当前可用工具完成。
 
+<a name="使用示例"></a>
+
 ## <img src="docs/brand/icon-book-2.svg" width="24" height="24" alt=""> 使用示例
 
 ```text
@@ -75,6 +81,8 @@ Windows 用户目录通常为 `%USERPROFILE%/.agents/skills/research-evolution-m
 
 你会得到可独立打开的 **HTML**、可继续更新的 **JSON 数据**、**CSV/BibTeX 文献清单**，以及检索核验报告和未核实问题清单。更新项目时，提供原始 JSON 和新增资料即可；已有数据也可用于进一步整理专题方向。
 
+<a name="工作流程"></a>
+
 ## <img src="docs/brand/icon-route.svg" width="24" height="24" alt=""> 工作流程
 
 <picture>
@@ -85,6 +93,8 @@ Windows 用户目录通常为 `%USERPROFILE%/.agents/skills/research-evolution-m
 </picture>
 
 综述解析、方法提取、去重、分类、关系分析、沿路线补充文献和 HTML 构建连续完成。分类依据、来源位置、事实或推断及核验状态随数据保存，交付时汇总需要进一步讨论的问题。
+
+<a name="html-输出效果"></a>
 
 ## <img src="docs/brand/icon-browser.svg" width="24" height="24" alt=""> HTML 输出效果
 
@@ -150,6 +160,8 @@ GitHub 文件页面显示 HTML 源码；下载后用浏览器打开即可交互�
 
 示例保留实际核验状态，不代表全部信息已核实或文献收录穷尽。另有 `assets/example-data.json` 作为小型虚构数据，用于脚本和交互测试。
 
+<a name="本地构建与校验"></a>
+
 ## <img src="docs/brand/icon-shield-check.svg" width="24" height="24" alt=""> 本地构建与校验
 
 <details>
@@ -180,6 +192,8 @@ python scripts/export_bibliography.py project.json --output-dir output
 构建会输出 HTML、完整 JSON、分类和关系数据、CSV/BibTeX、校验报告及待核清单。`--strict` 会把待核等警告也视为失败，适用于完成核验后的验收。
 
 </details>
+
+<a name="目录结构"></a>
 
 ## <img src="docs/brand/icon-folder.svg" width="24" height="24" alt=""> 目录结构
 
