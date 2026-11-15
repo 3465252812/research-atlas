@@ -59,12 +59,12 @@
 将完整仓库放入用户级 Skill 目录，确保 `SKILL.md` 位于该目录根部：
 
 ```bash
-git clone https://github.com/3465252812/research-evolution-map.git ~/.agents/skills/research-evolution-map
+git clone https://github.com/3465252812/research-atlas.git ~/.agents/skills/research-evolution-map
 ```
 
 Windows 用户目录通常为 `%USERPROFILE%/.agents/skills/research-evolution-map`。也可将仓库放入项目的 `.agents/skills/research-evolution-map`。如果已有同名 Skill，请先备份或在原目录更新，避免重复安装。Private 仓库需要对应的 GitHub 访问权限。
 
-在 Codex 中查找 **Research Atlas｜科研技术图谱**，或输入 `$research-evolution-map` 调用。展示名已更新，仓库路径与调用名保持兼容；未显示时可重启 Codex。
+在 Codex 中查找 **Research Atlas｜科研技术图谱**，或输入 `$research-evolution-map` 调用。GitHub 仓库名为 `research-atlas`；Skill 安装目录和调用名沿用 `research-evolution-map`，兼容现有项目。未显示时可重启 Codex。
 
 数据脚本要求 **Python 3.10+**，只依赖标准库。文献阅读和联网检索由 Codex 结合当前可用工具完成。
 
@@ -201,7 +201,7 @@ python scripts/export_bibliography.py project.json --output-dir output
 <summary>查看 Skill 文件和开发资源</summary>
 
 ```text
-research-evolution-map/
+research-atlas/
 ├── SKILL.md
 ├── README.md
 ├── agents/openai.yaml
