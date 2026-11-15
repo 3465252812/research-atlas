@@ -12,6 +12,8 @@ dialog{max-width:760px;width:calc(100% - 36px);max-height:90dvh;padding:0;border
 @media(max-width:850px){.hero{gap:22px;align-items:start}.hero-stats{gap:15px}.hero-stats dt{font-size:24px}.hero-stats div{min-width:48px}.hero-stats dd{font-size:10px}.collection-layout{display:block}.direction-panel{position:static;padding:12px;margin-bottom:16px}.direction-panel h3{margin-bottom:8px}.directions{flex-direction:row;overflow:auto;gap:5px}.direction{white-space:nowrap;flex-shrink:0;padding:8px 10px;border:1px solid var(--line)}.overview-toolbar{flex-wrap:wrap}.overview-toolbar .search-label{flex-basis:100%}.graph-workspace{display:block}.graph-detail{position:static;margin-top:16px;max-height:none}.graph-viewport{max-height:none;height:620px}.graph-detail .detail-empty{padding:22px}.graph-detail .detail-help{margin-top:15px}.graph-workspace:fullscreen{display:block;overflow:auto}.graph-workspace:fullscreen .graph-detail{max-height:none}.graph-workspace:fullscreen .graph-viewport{height:75dvh}.tabs{gap:20px}.graph-toolbar .segmented{width:100%;justify-content:space-between}.graph-toolbar .search-label{flex-basis:100%}}
 @media(max-width:540px){.hero{padding:24px 18px;display:block}.hero h1{font-size:24px}.hero p{font-size:12px;line-height:1.8}.hero-stats{margin-top:21px;gap:37px}.hero-stats dt{font-size:25px}.shell{padding:0 16px 30px}.page-nav{padding:17px 0;gap:8px;align-items:center}.tabs{gap:15px}.tabs button{font-size:12px;padding-bottom:12px}.tabs button span{display:none}.page-nav>button{padding:7px 8px;font-size:10px}.section-heading h2{font-size:21px}.section-heading p{font-size:11px}.toolbar{padding:11px;gap:10px}.toolbar label:not(.search-label){flex:1}.toolbar label:not(.search-label) select{width:100%;max-width:none}.overview-toolbar>button{flex:1}.method-list{grid-template-columns:1fr}.method-card{min-height:155px;padding:15px}.card-description{-webkit-line-clamp:2}.results-heading{align-items:start}.results-heading .check{font-size:10px;margin-top:4px}.pagination{gap:13px}.graph-toolbar .segmented button{font-size:10px;padding:9px 7px}.graph-toolbar>button{width:100%}.legend{font-size:9px;gap:10px}.zoom-tools{flex-wrap:wrap;gap:4px}.zoom-tools button{font-size:10px;padding:7px 9px}.chart-caption{flex-wrap:wrap;gap:8px;padding:10px;font-size:10px}.chart-caption .check{font-size:10px}.graph-viewport{height:560px;min-height:300px}.chart-note{font-size:9px;padding:10px}.method-detail{padding:17px}.dialog-top+.method-detail{padding:20px}.method-detail h2{font-size:19px}.graph-tools{gap:12px}.empty{padding:45px 12px}}
 @media(max-width:540px){.graph-viewport{min-height:240px}}
+.graph-toolbar>label:not(.search-label){min-width:130px}
+@media(max-width:540px){.overview-toolbar label:not(.search-label){flex:1 1 calc((100% - 20px)/3)}.overview-toolbar>button{flex:1 1 calc((100% - 10px)/2)}.graph-toolbar>label:not(.search-label){flex:1 1 calc((100% - 10px)/2)}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 @media print{.page-nav,.toolbar,.direction-panel,.pagination,.zoom-tools,.graph-detail,.check,.card-bottom button{display:none!important}.masthead{border:0}.hero,.shell{padding:15px}.collection-layout{display:block}.method-list{grid-template-columns:repeat(2,minmax(0,1fr))}.method-card{break-inside:avoid}.graph-workspace{display:block}.graph-viewport{height:auto;max-height:none;overflow:visible}.chart-panel{overflow:visible}.graph-viewport svg{width:100%!important;height:auto!important}.hero-stats{gap:20px}}
 
@@ -36,6 +38,7 @@ dialog{max-width:760px;width:calc(100% - 36px);max-height:90dvh;padding:0;border
       <label class="search-label"><span>检索方法</span><input id="method-search" type="search" autocomplete="off" placeholder="搜索名称、论文标题、机制或别名"></label>
       <label><span>时间</span><select id="method-year"><option value="">全部年份</option></select></label>
       <label><span>排序</span><select id="method-sort"><option value="direction">按技术方向</option><option value="newest">按时间从新到旧</option><option value="name">按名称</option></select></label>
+      <label><span>导出格式</span><select id="method-export-format"><option value="json">JSON 数据</option><option value="csv">文献 CSV</option><option value="bib">BibTeX</option></select></label>
       <button id="method-reset" type="button">重置筛选</button><button id="export-methods" type="button">导出当前合集</button>
     </div>
     <div class="collection-layout">
@@ -44,12 +47,15 @@ dialog{max-width:760px;width:calc(100% - 36px);max-height:90dvh;padding:0;border
     </div>
   </section>
   <section id="evolution-view" role="tabpanel" aria-labelledby="evolution-tab" hidden>
-    <div class="section-heading"><h2>技术演进关系图</h2><p>横向按时间展开，纵向分技术路线。展示当前收录的全部方法，可按技术方向或关系类型筛选。</p></div>
+    <div class="section-heading"><h2>技术演进关系图</h2><p>横向按时间展开，纵向分技术路线。默认展示全部方法，支持年份筛选、关系类型筛选和前驱／后续路径追踪。</p></div>
     <div class="toolbar graph-toolbar">
       <div class="segmented" role="group" aria-label="图谱方法范围"><button type="button" data-scope="all" class="active" aria-pressed="true">全部方法 0</button><span id="track-buttons" style="display:contents"></span></div>
       <label class="search-label"><span>检索节点</span><input id="graph-search" type="search" autocomplete="off" placeholder="搜索并定位方法"></label>
       <label><span>路线</span><select id="graph-direction"><option value="">全部技术方向</option></select></label>
+      <label><span>起始年份</span><select id="graph-year-from"><option value="">不限起始</option></select></label>
+      <label><span>结束年份</span><select id="graph-year-to"><option value="">不限结束</option></select></label>
       <label><span>关系</span><select id="graph-relations"><option value="all">全部关系</option><option value="technical">仅技术关联</option><option value="direct">仅明确依赖</option><option value="extension">仅框架扩展</option><option value="borrow">仅技术借鉴</option><option value="theme">仅同方向研究</option></select></label>
+      <label><span>关联范围</span><select id="graph-context" disabled title="技术路径只沿明确依赖、框架扩展和技术借鉴追踪，同方向研究不作为继承路径。"><option value="direct">直接关联</option><option value="ancestors">前驱技术路径</option><option value="descendants">后续技术路径</option><option value="both">上下游技术路径</option></select></label>
       <button id="graph-reset" type="button">重置图谱</button>
     </div>
     <div id="research-panel" class="research-panel" hidden aria-label="可选专题路线"></div>
@@ -103,6 +109,7 @@ dialog{max-width:760px;width:calc(100% - 36px);max-height:90dvh;padding:0;border
   const link = (u,label,cls='') => safeURL(u) ? `<a href="${E(safeURL(u))}" target="_blank" rel="noopener noreferrer" class="${cls}">${E(label)} ↗</a>` : '';
   const years = [...new Set(D.methods.map(year))].filter(y=>y!=='pending').sort().reverse();
   $('#method-year').insertAdjacentHTML('beforeend',years.map(y=>`<option value="${y}">${y}</option>`).join('')+'<option value="pending">日期未录入</option>');
+  ['graph-year-from','graph-year-to'].forEach(id=>$('#'+id).insertAdjacentHTML('beforeend',[...years].reverse().map(y=>`<option value="${y}">${y}</option>`).join('')));
   const inGroup=(m,id)=>m.group_ids.some(g=>g===id||groups.get(g)?.parent_id===id);
   function directionOptions(){const select=$('#graph-direction'),previous=select.value;
     select.innerHTML='<option value="">全部技术方向</option>'+(state.scope==='research'?D.research.lanes:D.groups).map(g=>'<option value="'+E(g.id)+'">'+E((g.parent_id?'↳ ':'')+g.name)+'</option>').join('');
@@ -165,14 +172,23 @@ dialog{max-width:760px;width:calc(100% - 36px);max-height:90dvh;padding:0;border
   const nodeW=160,nodeH=66,stepY=83,left=200;
   function band(m){return year(m)==='pending'?columns.length-1:columns.findIndex(c=>c.name===year(m));}
   function periodMatches(m){const u=D.research.update,from=u.recent_from||'',cutoff=D.metadata.search_cutoff||'9999';return state.period==='all'||state.period==='recent'&&year(m)!=='pending'&&m.date>=from&&m.date<=cutoff||state.period==='review'&&!!m.secondPass||state.period==='updates'&&!!m.addedIn||state.period==='publication'&&m.papers.some(p=>p.publication_date&&p.publication_date>=from&&p.publication_date<=cutoff);}
+  function yearMatches(m){const from=$('#graph-year-from').value,to=$('#graph-year-to').value,y=year(m);return (!from&&!to)||(y!=='pending'&&(!from||y>=from)&&(!to||y<=to));}
+  function edgeTypeMatches(e){const r=$('#graph-relations').value;return r==='all'||r==='technical'&&e.type!=='theme'||r===e.type;}
+  function relatedIds(id,eligible){
+    const ids=new Set(eligible.has(id)?[id]:[]),mode=$('#graph-context').value;
+    const edges=currentEdges().filter(e=>eligible.has(e.source)&&eligible.has(e.target)&&edgeTypeMatches(e));
+    if(mode==='direct'){edges.filter(e=>e.source===id||e.target===id).forEach(e=>{ids.add(e.source);ids.add(e.target);});return ids;}
+    const technical=edges.filter(e=>e.type!=='theme');
+    function walk(reverse){const adjacency=new Map();technical.forEach(e=>{const a=reverse?e.target:e.source,b=reverse?e.source:e.target;if(!adjacency.has(a))adjacency.set(a,[]);adjacency.get(a).push(b);});const seen=new Set(ids),queue=[...ids];for(let i=0;i<queue.length;i++)for(const next of adjacency.get(queue[i])||[])if(!seen.has(next)){seen.add(next);queue.push(next);}return seen;}
+    const upstream=mode==='ancestors'||mode==='both'?walk(true):new Set(),downstream=mode==='descendants'||mode==='both'?walk(false):new Set();
+    return new Set([...ids,...upstream,...downstream]);
+  }
 
   function graphFilter(){
     const q=$('#graph-search').value,group=$('#graph-direction').value;
-    let list=D.methods.filter(m=>{
-      if(state.scope==='research'){const p=researchPlacements.get(m.id);return p&&periodMatches(m)&&(!group||p.memberships.includes(group))&&matches(m,q);}
-      return (!group||inGroup(m,group))&&matches(m,q);
-    });
-    if($('#neighbor-only').checked&&state.selected){const ids=new Set([state.selected]);currentEdges().filter(e=>e.source===state.selected||e.target===state.selected).forEach(e=>{ids.add(e.source);ids.add(e.target);});list=D.methods.filter(m=>ids.has(m.id)&&(state.scope!=='research'||researchPlacements.has(m.id)));}
+    const eligible=D.methods.filter(m=>yearMatches(m)&&(state.scope!=='research'||researchPlacements.has(m.id)&&periodMatches(m)));
+    let list=eligible.filter(m=>(!group||(state.scope==='research'?researchPlacements.get(m.id).memberships.includes(group):inGroup(m,group)))&&matches(m,q));
+    if($('#neighbor-only').checked&&state.selected){const ids=relatedIds(state.selected,new Set(eligible.map(m=>m.id)));list=eligible.filter(m=>ids.has(m.id));}
     return list;
   }
   function wrap(text,max=23,lines=2){let result=[],line='',units=0;const tokens=String(text).match(/[A-Za-z0-9_]+|[^A-Za-z0-9_]/gu)||[];for(const token of tokens){const weight=[...token].reduce((sum,ch)=>sum+(/[^\x00-\xff]/.test(ch)?1.8:1),0);if(units+weight>max&&line.trim()){result.push(line.trim());line='';units=0;if(result.length===lines){result[lines-1]=result[lines-1].replace(/…$/,'')+'…';return result;}}if(!line&&!token.trim())continue;line+=token;units+=weight;}if(line.trim())result.push(line.trim());return result;}
@@ -185,9 +201,10 @@ dialog{max-width:760px;width:calc(100% - 36px);max-height:90dvh;padding:0;border
   document.addEventListener('click',e=>{const button=e.target.closest('[data-research-route]');if(!button)return;state.scope='research';directionOptions();$('#graph-direction').value=button.dataset.researchRoute;$('#neighbor-only').checked=false;scopeButtons();renderGraph();if(state.selected)selectMethod(state.selected);});
   function renderGraph(resetScroll=true){
     renderResearchPanel();
-    graphMethods=graphFilter();const ids=new Set(graphMethods.map(m=>m.id)),r=$('#graph-relations').value;
-    if(state.selected&&!ids.has(state.selected)){state.selected=null;$('#neighbor-only').disabled=true;$('#clear-selection').hidden=true;$('#graph-detail-body').className='detail-empty';$('#graph-detail-body').innerHTML='<strong>选择一个方法，展开它的技术脉络</strong><p>点击节点查看核心机制与论文，点击连线查看关系依据。</p>';}
-    graphEdges=currentEdges().filter(e=>ids.has(e.source)&&ids.has(e.target)&&(r==='all'||r==='technical'&&e.type!=='theme'||r===e.type));
+    graphMethods=graphFilter();const ids=new Set(graphMethods.map(m=>m.id));
+    if(state.selected&&!ids.has(state.selected)){state.selected=null;$('#neighbor-only').checked=false;$('#neighbor-only').disabled=true;$('#graph-context').disabled=true;$('#clear-selection').hidden=true;$('#graph-detail-body').className='detail-empty';$('#graph-detail-body').innerHTML='<strong>选择一个方法，展开它的技术脉络</strong><p>点击节点查看核心机制与论文，点击连线查看关系依据。</p>';}
+    const tracing=$('#neighbor-only').checked&&$('#graph-context').value!=='direct';
+    graphEdges=currentEdges().filter(e=>ids.has(e.source)&&ids.has(e.target)&&edgeTypeMatches(e)&&(!tracing||e.type!=='theme'));
     const activeColumns=columns.map((c,i)=>({...c,band:i})).filter(c=>graphMethods.some(m=>band(m)===c.band));
     graphWidth=left+activeColumns.reduce((sum,c)=>sum+c.width,0)+20;
     const isResearch=state.scope==='research',groupOf=m=>isResearch?researchLane(m):m.group;
@@ -207,32 +224,34 @@ dialog{max-width:760px;width:calc(100% - 36px);max-height:90dvh;padding:0;border
     $('#evolution-svg').innerHTML=`${definitions}${laneMarkup.join('')}<rect class="axis-bg" x="0" y="0" width="${graphWidth}" height="70"/><text class="axis-label" x="18" y="29">技术路线 / 时间</text><text class="axis-sub" x="18" y="48">时间位置不等同于继承</text>${axes}<g id="graph-edges">${paths}</g><g id="graph-nodes">${nodes}</g>`;
     $('#evolution-svg').setAttribute('viewBox',`0 0 ${graphWidth} ${graphHeight}`);if(resetScroll&&($('#graph-direction').value||$('#graph-search').value))state.zoom=Math.max(.7,Math.min(1,($('#graph-viewport').clientWidth-12)/graphWidth));applyZoom();
     $('#evolution-svg').hidden=!graphMethods.length;$('#graph-empty').hidden=!!graphMethods.length;
-    $('#graph-count').textContent=`${isResearch?'研究方向 · ':''}当前 ${graphMethods.length} / ${isResearch?researchPlacements.size:D.methods.length} 个方法 · ${activeGroups.length} 条路线 · ${graphEdges.length} 条连线`;
+    $('#graph-count').textContent=`${isResearch?'研究方向 · ':''}${tracing?$('#graph-context').selectedOptions[0].textContent+' · ':''}当前 ${graphMethods.length} / ${isResearch?researchPlacements.size:D.methods.length} 个方法 · ${activeGroups.length} 条路线 · ${graphEdges.length} 条连线`;
     if(resetScroll){$('#graph-viewport').scrollTop=0;$('#graph-viewport').scrollLeft=0;}
     highlightSelection();
   }
   function highlightSelection(){
-    const neighbors=new Set(state.selected?[state.selected]:[]),edges=new Set();if(state.selected)graphEdges.filter(e=>e.source===state.selected||e.target===state.selected).forEach(e=>{neighbors.add(e.source);neighbors.add(e.target);edges.add(e.id);});
+    const neighbors=new Set(state.selected?[state.selected]:[]),edges=new Set();if(state.selected){const tracing=$('#neighbor-only').checked&&$('#graph-context').value!=='direct';if(tracing)graphMethods.forEach(m=>neighbors.add(m.id));graphEdges.filter(e=>tracing||e.source===state.selected||e.target===state.selected).forEach(e=>{neighbors.add(e.source);neighbors.add(e.target);edges.add(e.id);});}
     $$('.graph-node').forEach(n=>{const id=n.dataset.node;n.classList.toggle('selected',id===state.selected);n.classList.toggle('related',id!==state.selected&&neighbors.has(id));n.classList.toggle('dim',!!state.selected&&!neighbors.has(id));});
     $$('[data-edge]').forEach(g=>{const p=g.querySelector('.edge');p.classList.toggle('highlight',edges.has(g.dataset.edge));p.classList.toggle('dim',!!state.selected&&!edges.has(g.dataset.edge));});
   }
-  function selectMethod(id){state.selected=id;$('#neighbor-only').disabled=false;$('#graph-detail-body').className='';$('#graph-detail-body').innerHTML=methodContent(id);$('#clear-selection').hidden=false;highlightSelection();}
+  function selectMethod(id){state.selected=id;$('#neighbor-only').disabled=false;$('#graph-context').disabled=false;$('#graph-detail-body').className='';$('#graph-detail-body').innerHTML=methodContent(id);$('#clear-selection').hidden=false;highlightSelection();}
   function locateMethod(id){
-    $('#graph-search').value='';$('#graph-direction').value='';state.period='all';$('#neighbor-only').checked=false;if(state.scope!=='research'||!researchPlacements.has(id))state.scope='all';directionOptions();scopeButtons();showView('evolution',true);renderGraph(false);selectMethod(id);
+    $('#graph-search').value='';$('#graph-direction').value='';$('#graph-year-from').value='';$('#graph-year-to').value='';$('#graph-context').value='direct';state.period='all';$('#neighbor-only').checked=false;if(state.scope!=='research'||!researchPlacements.has(id))state.scope='all';directionOptions();scopeButtons();showView('evolution',true);renderGraph(false);selectMethod(id);
     const p=positions.get(id),v=$('#graph-viewport');if(p){v.scrollLeft=Math.max(0,(p.x+nodeW/2)*state.zoom-v.clientWidth/2);v.scrollTop=Math.max(0,(p.y+nodeH/2)*state.zoom-v.clientHeight/2);const node=$(`[data-node="${id}"]`);node?.focus({preventScroll:true});}
   }
-  function clearSelection(){state.selected=null;$('#neighbor-only').checked=false;$('#neighbor-only').disabled=true;$('#clear-selection').hidden=true;$('#graph-detail-body').className='detail-empty';$('#graph-detail-body').innerHTML='<strong>选择一个方法，展开它的技术脉络</strong><p>点击节点查看核心机制与论文，点击连线查看关系依据。</p><div class="detail-help">同方向研究表示机制相关或并行探索，不表示直接继承。</div>';renderGraph(false);}
+  function clearSelection(){state.selected=null;$('#neighbor-only').checked=false;$('#neighbor-only').disabled=true;$('#graph-context').disabled=true;$('#graph-context').value='direct';$('#clear-selection').hidden=true;$('#graph-detail-body').className='detail-empty';$('#graph-detail-body').innerHTML='<strong>选择一个方法，展开它的技术脉络</strong><p>点击节点查看核心机制与论文，点击连线查看关系依据。</p><div class="detail-help">同方向研究表示机制相关或并行探索，不表示直接继承。</div>';renderGraph(false);}
   $('#clear-selection').addEventListener('click',clearSelection);
   $('#evolution-svg').addEventListener('click',e=>{const n=e.target.closest('[data-node]'),edge=e.target.closest('[data-edge]');if(n){selectMethod(n.dataset.node);if($('#neighbor-only').checked)renderGraph(false);}else if(edge)selectEdge(edge.dataset.edge);});
   $('#evolution-svg').addEventListener('keydown',e=>{if(!['Enter',' '].includes(e.key))return;const n=e.target.closest('[data-node]');if(n){e.preventDefault();selectMethod(n.dataset.node);if($('#neighbor-only').checked)renderGraph(false);}});
-  function selectEdge(id){const e=currentEdges().find(e=>e.id===id);if(!e)return;state.selected=null;$('#neighbor-only').checked=false;$('#neighbor-only').disabled=true;highlightSelection();$('#clear-selection').hidden=false;const basis=e.basis==='沿用原页的技术关系记录，尚未逐条重新核对原论文。'?'':e.basis,sources=sourceLinks(e.evidence||[]);$('#graph-detail-body').className='';$('#graph-detail-body').innerHTML='<div class="edge-detail"><div class="kicker">'+types[e.type]+(e.claim_basis==='inference'?' · 关系推断':'')+'</div><h4>'+E(e.label)+'</h4><p class="edge-names">'+E(methods.get(e.source).name)+(e.type==='theme'?' ↔ ':' → ')+E(methods.get(e.target).name)+'</p>'+field('关系说明',basis)+(e.verification==='disputed'?field('不同记录','该关系存在不同判断，详见数据中的证据记录。'):'')+(sources?'<section class="detail-field"><h4>参考来源</h4><ul class="source-list">'+sources+'</ul></section>':'')+(e.type==='theme'?field('关联类型','同方向研究，不表示直接继承。'):'')+'<button data-focus="'+e.source+'">定位起点</button><button data-focus="'+e.target+'">定位终点</button></div>';}
+  function selectEdge(id){const e=currentEdges().find(e=>e.id===id);if(!e)return;state.selected=null;$('#graph-context').disabled=true;$('#neighbor-only').checked=false;$('#neighbor-only').disabled=true;highlightSelection();$('#clear-selection').hidden=false;const basis=e.basis==='沿用原页的技术关系记录，尚未逐条重新核对原论文。'?'':e.basis,sources=sourceLinks(e.evidence||[]);$('#graph-detail-body').className='';$('#graph-detail-body').innerHTML='<div class="edge-detail"><div class="kicker">'+types[e.type]+(e.claim_basis==='inference'?' · 关系推断':'')+'</div><h4>'+E(e.label)+'</h4><p class="edge-names">'+E(methods.get(e.source).name)+(e.type==='theme'?' ↔ ':' → ')+E(methods.get(e.target).name)+'</p>'+field('关系说明',basis)+(e.verification==='disputed'?field('不同记录','该关系存在不同判断，详见数据中的证据记录。'):'')+(sources?'<section class="detail-field"><h4>参考来源</h4><ul class="source-list">'+sources+'</ul></section>':'')+(e.type==='theme'?field('关联类型','同方向研究，不表示直接继承。'):'')+'<button data-focus="'+e.source+'">定位起点</button><button data-focus="'+e.target+'">定位终点</button></div>';}
 
   function scopeButtons(){$$('[data-scope]').forEach(b=>{const active=b.dataset.scope===state.scope&&(state.scope!=='research'||b.dataset.track===D.research.id);b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});}
   $$('[data-scope]').forEach(b=>b.addEventListener('click',()=>{state.scope=b.dataset.scope;if(b.dataset.track)setTrack(b.dataset.track);state.period='all';$('#neighbor-only').checked=false;directionOptions();scopeButtons();renderGraph();if(state.selected)selectMethod(state.selected);}));
-  $('#graph-search').addEventListener('input',()=>{clearTimeout(graphTimer);graphTimer=setTimeout(()=>{$('#neighbor-only').checked=false;renderGraph();if(graphMethods.length===1){const id=graphMethods[0].id;selectMethod(id);if(currentEdges().some(e=>e.source===id||e.target===id)){$('#neighbor-only').checked=true;renderGraph(false);}}},120);});
+  $('#graph-search').addEventListener('input',()=>{clearTimeout(graphTimer);graphTimer=setTimeout(()=>{$('#neighbor-only').checked=false;$('#graph-context').value='direct';renderGraph();if(graphMethods.length===1){const id=graphMethods[0].id;selectMethod(id);if(currentEdges().some(e=>e.source===id||e.target===id)){$('#neighbor-only').checked=true;renderGraph(false);}}},120);});
   ['graph-direction','graph-relations','neighbor-only'].forEach(id=>$('#'+id).addEventListener('change',()=>renderGraph()));
-  function resetGraph(){if(state.scope!=='research')state.scope='all';state.selected=null;state.zoom=1;$('#graph-search').value='';$('#graph-direction').value='';$('#graph-relations').value='all';state.period='all';$('#neighbor-only').checked=false;directionOptions();scopeButtons();clearSelection();renderGraph();}
-  $('#graph-reset').addEventListener('click',resetGraph);$('#graph-empty-reset').addEventListener('click',()=>{if(state.scope!=='research')state.scope='all';$('#graph-search').value='';$('#graph-direction').value='';$('#neighbor-only').checked=false;directionOptions();scopeButtons();renderGraph();});
+  ['graph-year-from','graph-year-to'].forEach(id=>$('#'+id).addEventListener('change',e=>{const from=$('#graph-year-from'),to=$('#graph-year-to');if(from.value&&to.value&&from.value>to.value)(e.target===from?to:from).value=e.target.value;renderGraph();}));
+  $('#graph-context').addEventListener('change',()=>{if(state.selected){$('#neighbor-only').checked=true;renderGraph();}});
+  function resetGraph(){if(state.scope!=='research')state.scope='all';state.selected=null;state.zoom=1;$('#graph-search').value='';$('#graph-direction').value='';$('#graph-year-from').value='';$('#graph-year-to').value='';$('#graph-relations').value='all';state.period='all';$('#neighbor-only').checked=false;directionOptions();scopeButtons();clearSelection();renderGraph();}
+  $('#graph-reset').addEventListener('click',resetGraph);$('#graph-empty-reset').addEventListener('click',resetGraph);
   function applyZoom(){$('#evolution-svg').style.width=graphWidth*state.zoom+'px';$('#evolution-svg').style.height=graphHeight*state.zoom+'px';$('#zoom-status').textContent=Math.round(state.zoom*100)+'%';$('#graph-viewport').style.height=document.fullscreenElement?'':Math.max(window.innerWidth<540?260:360,Math.min(720,window.innerHeight*.74,graphHeight*state.zoom+12))+'px';}
   function zoomTo(value,anchor=null){const v=$('#graph-viewport'),old=state.zoom,x=anchor?.x??v.clientWidth/2,y=anchor?.y??v.clientHeight/2;const gx=(v.scrollLeft+x)/old,gy=(v.scrollTop+y)/old;state.zoom=Math.max(.3,Math.min(2.2,value));applyZoom();v.scrollLeft=Math.max(0,gx*state.zoom-x);v.scrollTop=Math.max(0,gy*state.zoom-y);}
   $('#zoom-in').addEventListener('click',()=>zoomTo(state.zoom*1.2));$('#zoom-out').addEventListener('click',()=>zoomTo(state.zoom/1.2));$('#fit-width').addEventListener('click',()=>{zoomTo(($('#graph-viewport').clientWidth-16)/graphWidth,{x:0,y:0});$('#graph-viewport').scrollLeft=0;});
@@ -247,7 +266,18 @@ dialog{max-width:760px;width:calc(100% - 36px);max-height:90dvh;padding:0;border
   function download(content,name,type){const url=URL.createObjectURL(new Blob([content],{type}));const a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500);}
   document.addEventListener('change',e=>{if(e.target.id!=='research-period')return;state.period=e.target.value;$('#neighbor-only').checked=false;renderGraph();});
   document.addEventListener('click',e=>{if(!e.target.closest('#export-date-audit'))return;const cell=s=>'"'+String(s??'').replace(/"/g,'""')+'"';const rows=D.research.dateAudits.map(r=>[r.name,r.title,r.oldDate,r.date,r.audit?.kind||'',r.audit?.arxivFirst||'',r.publication?.label||'未记录',r.publication?.date||'',r.publication?.status||'未记录',r.audit?.source||'',r.publication?.source||'',r.audit?.note||'',r.audit?.checkedAt||'',(r.authors||[]).join('; '),r.authorAudit?.source||'']);const headers=['方法','论文标题','原时间','图谱采用时间','时间依据','arXiv 首次提交','发表 / 录用记录','发表时间','发表状态','时间证据链接','发表证据链接','核验说明','核验记录日期','作者（按署名顺序）','作者证据链接'];download('\ufeff'+[headers,...rows].map(row=>row.map(cell).join(',')).join('\r\n'),'专题文献日期核验表.csv','text/csv;charset=utf-8');});
-  $('#export-methods').addEventListener('click',()=>{const ids=new Set(collection.map(m=>m.id)),ms=D.canonical.methods.filter(m=>ids.has(m.id)),pids=new Set(ms.flatMap(m=>m.paper_ids));const subset={...D.canonical,papers:D.canonical.papers.filter(p=>pids.has(p.id)),methods:ms,groups:D.canonical.groups.map(g=>({...g,representative_method_ids:(g.representative_method_ids||[]).filter(id=>ids.has(id))})),edges:D.canonical.edges.filter(e=>ids.has(e.source)&&ids.has(e.target)),research_tracks:[]};download(JSON.stringify(subset,null,2),'当前方法合集.json','application/json;charset=utf-8');});
+  function currentSubset(){const ids=new Set(collection.map(m=>m.id)),ms=D.canonical.methods.filter(m=>ids.has(m.id)),pids=new Set(ms.flatMap(m=>m.paper_ids));return {...D.canonical,papers:D.canonical.papers.filter(p=>pids.has(p.id)),methods:ms,groups:D.canonical.groups.map(g=>({...g,representative_method_ids:(g.representative_method_ids||[]).filter(id=>ids.has(id))})),edges:D.canonical.edges.filter(e=>ids.has(e.source)&&ids.has(e.target)),research_tracks:[]};}
+  function bibliographyCSV(papers){
+    const keys=['id','title','authors','doi','arxiv_id','first_public_date','publication_date','venue','publication_status','url','verification'];
+    const cell=value=>{let s=String(value??'');if(/^\s*[=+\-@]/.test(s)||/^[\t\r\n]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"';};
+    return '\ufeff'+[keys,...papers.map(p=>keys.map(k=>k==='authors'?(p.authors||[]).join('; '):p[k]))].map(row=>row.map(cell).join(',')).join('\r\n')+'\r\n';
+  }
+  function bibliographyBib(papers){
+    const chars={'\\':'{\\textbackslash}','{':'\\{','}':'\\}','&':'\\&','%':'\\%','$':'\\$','#':'\\#','_':'\\_','~':'{\\textasciitilde}','^':'{\\textasciicircum}'};
+    const escape=value=>String(value).replace(/[\\{}&%$#_~^]/g,c=>chars[c]).replace(/\n/g,' ');
+    return papers.map(p=>{const fields={title:p.title,author:(p.authors||[]).join(' and '),doi:p.doi,eprint:p.arxiv_id,url:p.url},date=p.publication_date||p.first_public_date;if(date)fields.year=date.slice(0,4);if(p.venue)fields.howpublished=p.venue;if(p.arxiv_id)fields.archivePrefix='arXiv';return '@misc{'+p.id+',\n'+Object.entries(fields).filter(([,v])=>v).map(([k,v])=>'  '+k+' = {'+escape(v)+'}').join(',\n')+'\n}';}).join('\n\n')+'\n';
+  }
+  $('#export-methods').addEventListener('click',()=>{const data=currentSubset(),format=$('#method-export-format').value;if(format==='csv')download(bibliographyCSV(data.papers),'当前文献.csv','text/csv;charset=utf-8');else if(format==='bib')download(bibliographyBib(data.papers),'当前文献.bib','application/x-bibtex;charset=utf-8');else download(JSON.stringify(data,null,2),'当前方法合集.json','application/json;charset=utf-8');});
 
   $('#export-svg').addEventListener('click',()=>{if(!graphMethods.length)return;const clone=$('#evolution-svg').cloneNode(true);clone.querySelectorAll('.edge-hit').forEach(n=>n.remove());clone.querySelectorAll('.graph-node').forEach(n=>n.classList.remove('dim','selected','related'));clone.querySelectorAll('.edge').forEach(n=>n.classList.remove('dim','highlight'));clone.setAttribute('width',graphWidth);clone.setAttribute('height',graphHeight);clone.style.width='';clone.style.height='';const tokens=['panel','soft','ink','muted','line','accent','tint','grid','direct','extension','borrow','theme'];const computed=getComputedStyle(document.documentElement);tokens.forEach(t=>clone.style.setProperty('--'+t,computed.getPropertyValue('--'+t)));clone.style.fontFamily='Segoe UI,Microsoft YaHei,Arial,sans-serif';const style=document.createElementNS('http://www.w3.org/2000/svg','style');style.textContent=$('style').textContent;clone.insertBefore(style,clone.firstChild);download('<?xml version="1.0" encoding="UTF-8"?>\n'+new XMLSerializer().serializeToString(clone),'技术演进关系图.svg','image/svg+xml;charset=utf-8');});
   function setTheme(theme){state.theme=theme;if(theme==='auto')delete document.documentElement.dataset.theme;else document.documentElement.dataset.theme=theme;$('#theme-toggle').textContent='主题：'+({auto:'自动',light:'浅色',dark:'深色'}[theme]);try{localStorage.setItem('research-evolution-map-theme',theme);}catch{}}
@@ -255,7 +285,7 @@ dialog{max-width:760px;width:calc(100% - 36px);max-height:90dvh;padding:0;border
   try{const saved=localStorage.getItem('research-evolution-map-theme');if(['auto','light','dark'].includes(saved))setTheme(saved);}catch{}
   $('#neighbor-only').disabled=true;directionButtons();filterCollection();
   if(location.hash==='#research'&&D.tracks.length){state.scope='research';directionOptions();scopeButtons();showView('evolution');renderGraph();}
-  window.__RESEARCH_MAP__={methodCount:D.methods.length,edgeCount:D.edges.length,researchCount:researchPlacements.size,getGraphState:()=>({scope:state.scope,ids:graphMethods.map(m=>m.id),edges:graphEdges,positions:[...positions],width:graphWidth,height:graphHeight,zoom:state.zoom,selected:state.selected,period:state.period})};
+  window.__RESEARCH_MAP__={methodCount:D.methods.length,edgeCount:D.edges.length,researchCount:researchPlacements.size,getGraphState:()=>({scope:state.scope,ids:graphMethods.map(m=>m.id),edges:graphEdges,positions:[...positions],width:graphWidth,height:graphHeight,zoom:state.zoom,selected:state.selected,period:state.period,context:$('#graph-context').value,yearFrom:$('#graph-year-from').value,yearTo:$('#graph-year-to').value})};
 })();
 </script>
 </body></html>

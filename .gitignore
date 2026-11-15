@@ -64,6 +64,10 @@ node_modules/
 *.csv
 *.bib
 
+# Reviewed bibliography outputs shipped with the public-data example
+!/examples/3dgs/bibliography.csv
+!/examples/3dgs/bibliography.bib
+
 # Operating system files
 .DS_Store
 Thumbs.db
